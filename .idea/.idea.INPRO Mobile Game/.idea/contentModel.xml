@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Alex Nogueira\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Alex Nogueira\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_INPRO Mobile Game.-1054148848.00" t="ExcludeRecursive" />
+    <e p="D:\School\INPRO\Semester 3 - Mobile Game\INPRO Mobile Game" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Pixelplacement" t="Include">
+            <e p="iTween" t="Include">
+              <e p="iTween.cs" t="Include" />
+              <e p="ReadMe!" t="Include">
+                <e p="ReadMe!.txt" t="Include" />
+              </e>
+              <e p="Sample" t="Include">
+                <e p="MoveSample.cs" t="Include" />
+                <e p="RotateSample.cs" t="Include" />
+                <e p="SampleInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="RestSharp.xml" t="Include" />
+        </e>
+        <e p="SwipeMenu" t="Include">
+          <e p="Documentation" t="Include">
+            <e p="Read Me First!.txt" t="Include" />
+            <e p="Version History.txt" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="SwipeHandlerEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Demo Scripts" t="Include">
+              <e p="DemoSceneSwitcher.cs" t="Include" />
+              <e p="ExampleCharacterSelector.cs" t="Include" />
+              <e p="ExampleMenuAudioPlayer.cs" t="Include" />
+              <e p="MoveBetweenMenus.cs" t="Include" />
+              <e p="ShowTextOnMenuCentred.cs" t="Include" />
+              <e p="SwipeMenuAudioPlayer.cs" t="Include" />
+              <e p="UpdateMenuItemOnClick.cs" t="Include" />
+              <e p="UpdateTextColourOnMenuClick.cs" t="Include" />
+            </e>
+            <e p="SwipeMenu" t="Include">
+              <e p="Helper.cs" t="Include" />
+              <e p="Input" t="Include">
+                <e p="SwipeHandler.cs" t="Include" />
+                <e p="TouchHandler.cs" t="Include" />
+              </e>
+              <e p="Menu.cs" t="Include" />
+              <e p="MenuItem.cs" t="Include" />
+              <e p="SubMenuItem.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TEXTBASEDRPG" t="Include">
+          <e p="Consumable.cs" t="Include" />
+          <e p="Dialogue" t="Include">
+            <e p="Dialogue.cs" t="Include" />
+            <e p="DialogueNode.cs" t="Include" />
+            <e p="DialogueNodeSplit.cs" t="Include" />
+            <e p="DialogueOption.cs" t="Include" />
+            <e p="DialogueOptions.cs" t="Include" />
+            <e p="Option.cs" t="Include" />
+          </e>
+          <e p="DialogueLoader.cs" t="Include" />
+          <e p="DialogueSystem.cs" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="Entity.cs" t="Include" />
+            <e p="Namable.cs" t="Include" />
+            <e p="NPC.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
+          <e p="EventSystem" t="Include">
+            <e p="EventHandler.cs" t="Include" />
+            <e p="EventSystem.cs" t="Include" />
+          </e>
+          <e p="Foo.cs" t="Include" />
+          <e p="Game.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
+          <e p="Item.cs" t="Include" />
+          <e p="OptionButton.cs" t="Include" />
+          <e p="Skill.cs" t="Include" />
+          <e p="TextManager.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="INPRO Mobile Game.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
