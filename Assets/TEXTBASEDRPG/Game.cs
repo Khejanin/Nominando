@@ -7,14 +7,14 @@ public class Game : MonoBehaviour
 
     public DialogueSystem dialogueSystem;
 
-    public Dialogue dialogue;
+    public Dialogue startDialogue;
 
     // Start is called before the first frame update
     void Start()
     {
-        TouchScreenKeyboard.Open("test", TouchScreenKeyboardType.Default, false, false, false, false, "", 32);
-        Debug.Log(TouchScreenKeyboard.isSupported);
-        dialogueSystem.setCurrentDialogue(dialogue);
+        //TouchScreenKeyboard.Open("test", TouchScreenKeyboardType.Default, false, false, false, false, "", 32);
+        //Debug.Log(TouchScreenKeyboard.isSupported);
+        dialogueSystem.setCurrentDialogue(startDialogue);
     }
 
     // Update is called once per frame

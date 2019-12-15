@@ -4,78 +4,81 @@ using TEXTBASEDRPG.EventSystem;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class DialogueSystem : MonoBehaviour
 {
 
-    public List<Button> buttons;
-    public List<EventSystem> _events;
-    private List<TextMeshProUGUI> _buttonTexts;
+    public List<Button> buttons = new List<Button>();
+    public List<MasterEvent> _events = new List<MasterEvent>();
+    private List<TextMeshProUGUI> _buttonTexts = new List<TextMeshProUGUI>();
+
+    private MasterEvent defaultContinueEvent;
+    private EventHandler _eventHandler;
 
     public TextMeshProUGUI dialogueTextMesh;
 
     Dialogue _currentDialogue;
 
+    public Dialogue getCurrentDialogue()
+    {
+        return _currentDialogue;
+    }
+
     public void SetOptions(DialogueOptions options)
     {
-        //@TODO
+        for (int i = 0; i < _buttonTexts.Count; i++)
+        {
+            _buttonTexts[i].SetText(options.options[i].optionString);
+            _events[i] = options.options[i].masterEvent;
+            buttons[i].enabled = true;
+        }
     }
 
     public void setLinearOptions()
     {
-        /*optionButton1.updateOption(null);
-        optionButton1.updateText("Continue");
-        optionButton2.updateOption(null);
-        optionButton2.updateText("");
-        optionButton3.updateOption(null);
-        optionButton3.updateText("");
-        optionButton4.updateOption(null);
-        optionButton4.updateText("");*/
-    }
-
-    private void Start()
-    {
-        for (var i = 0; i < _buttonTexts.Count; i++)
+        for (int i = 0; i < _buttonTexts.Count; i++)
         {
-            _buttonTexts[i] = buttons[i].GetComponent<TextMeshProUGUI>();
-            buttons[i].onClick.AddListener((i) =>
-            {
-                
-            });
+            _buttonTexts[i].SetText("");
+            buttons[i].enabled = false;
         }
-        
+
+        buttons[3].enabled = true;
+        _events[3] = defaultContinueEvent;
+        _buttonTexts[3].SetText("Continue");
     }
 
-    void fetchButtonInfo1()
+    private void Awake()
     {
-        _currentDialogue.continueDialogue(option1.GetComponent<OptionButton>().getOption());
-        continueDialogue();
-    }
+        _eventHandler = EventHandler.getEventHandler();
+        bool done = false;
+        for (var i = 0; !done; i++)
+        {
+            _buttonTexts.Add(buttons[i].GetComponentInChildren<TextMeshProUGUI>());
+            _events.Add(null);
+            buttons[i].enabled = false;
+            buttons[i].onClick.AddListener(() =>
+            {
+                Debug.Log(i);
+                EventHandler.getEventHandler().HandleEvent(_events[i]);
+            });
 
-    void fetchButtonInfo2()
-    {
-        _currentDialogue.continueDialogue(option2.GetComponent<OptionButton>().getOption());
-        continueDialogue();
-    }
+            if (i == 3) done = true;
+        }
 
-    void fetchButtonInfo3()
-    {
-        _currentDialogue.continueDialogue(option3.GetComponent<OptionButton>().getOption());
-        continueDialogue();
+        defaultContinueEvent = new MasterEvent { interaction = MasterEvent.InteractionType.Talk, 
+                                                    autosave = false,
+                                                    doOnce = false,
+                                                    e = new MasterEvent.DialogueContinueEvent(),
+                                                    isDone = false};
     }
-
-    void fetchButtonInfo4()
-    {
-        _currentDialogue.continueDialogue(option4.GetComponent<OptionButton>().getOption());
-        continueDialogue();
-    }
-
+    
     public void doUpdate()
     {
         //updateDialogue();
     }
 
-    public void updateDialogue()
+    private void updateDialogue()
     {
         dialogueTextMesh.SetText(_currentDialogue.getDialogue());
     }
@@ -88,13 +91,14 @@ public class DialogueSystem : MonoBehaviour
         updateDialogue();
     }
 
-    public void continueDialogue()
+    public void continueDialogue(DialogueOption option)
     {
-        checkAndSetOptions();
-        updateDialogue();
+        _currentDialogue.continueDialogue(option);
+        checkAndSetOptions(); //Uodates the options
+        updateDialogue(); //Updates the Text
     }
 
-    public void checkAndSetOptions()
+    private void checkAndSetOptions()
     {
         Debug.Log("yes!");
         if (_currentDialogue.current is DialogueNodeSplit)

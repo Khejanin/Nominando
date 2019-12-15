@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TEXTBASEDRPG.EventSystem;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public class DialogueOption : MonoBehaviour
@@ -11,6 +12,6 @@ public class DialogueOption : MonoBehaviour
 
     public DialogueNode next;
 
-    public EventSystem eventSystem;
+    [FormerlySerializedAs("masterEventMono")] [FormerlySerializedAs("eventSystem")] public MasterEvent masterEvent;
 
 }
