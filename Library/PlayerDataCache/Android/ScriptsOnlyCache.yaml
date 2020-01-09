@@ -1,15 +1,38 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-firstpass.dll:
+    - ImageCropper
+    - ImageCropperNamespace.CircleGraphic
+    - ImageCropperNamespace.FadeOverlayGraphic
+    - ImageCropperNamespace.FontSizeSynchronizer
+    - ImageCropperNamespace.SelectionCornersFitter
+    - ImageCropperNamespace.SelectionGraphicsSynchronizer
+    - ImageCropperNamespace.SelectionMovementHandler
+    - ImageCropperNamespace.SelectionResizeHandler
+    - ImageCropperNamespace.SizeChangeListener
     Assembly-CSharp.dll:
+    - Action
+    - ActionPanelScript
+    - CameraController
     - Dialogue
-    - DialogueLoader
     - DialogueNode
     - DialogueNodeSplit
-    - DialogueOption
-    - DialogueOptions
-    - DialogueSystem
+    - EventSystem.ButtonEventHandler
+    - EventSystem.DialogueEventInfo
+    - EventSystem.EntityEventInfo
+    - EventSystem.LocationEventInfo
+    - EventSystem.MasterEventInfo
+    - EventSystem.NamableEventInfo
+    - EventSystem.ProgressEventInfo
     - Game
-    - OptionButton
+    - GameView
+    - NPC
+    - Namable.Location
+    - Referencer
+    TextJuicer.dll:
+    - BrunoMikoski.TextJuicer.Modifiers.TextJuicerGradientModifier
+    - BrunoMikoski.TextJuicer.Modifiers.TextJuicerTransformModifier
+    - BrunoMikoski.TextJuicer.TMP_TextJuicer
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -22,8 +45,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.DeviceSimulator.Editor.dll:
     - Unity.DeviceSimulator.SimulatorWindow
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
+    - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -36,20 +63,30 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.BaseInput
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/TEXTBASEDRPG/GUILayout.unity:
+    Assets/TEXTBASEDRPG/Game.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -71,59 +108,113 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11270}
+      Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 11224}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11432}
     - Class: 114
-      Script: {instanceID: 11928}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 11502}
     - Class: 114
-      Script: {instanceID: 12066}
+      Script: {instanceID: 11508}
     - Class: 114
-      Script: {instanceID: 12098}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 11624}
     - Class: 114
-      Script: {instanceID: 12318}
+      Script: {instanceID: 11628}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 12588}
+      Script: {instanceID: 11764}
     - Class: 114
-      Script: {instanceID: 12698}
+      Script: {instanceID: 11828}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 11926}
+    - Class: 114
+      Script: {instanceID: 11968}
+    - Class: 114
+      Script: {instanceID: 12016}
+    - Class: 114
+      Script: {instanceID: 12038}
+    - Class: 114
+      Script: {instanceID: 12070}
+    - Class: 114
+      Script: {instanceID: 12074}
+    - Class: 114
+      Script: {instanceID: 12192}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12304}
+    - Class: 114
+      Script: {instanceID: 12368}
+    - Class: 114
+      Script: {instanceID: 12426}
+    - Class: 114
+      Script: {instanceID: 12450}
+    - Class: 114
+      Script: {instanceID: 12592}
+    - Class: 114
+      Script: {instanceID: 12616}
+    - Class: 114
+      Script: {instanceID: 12700}
+    - Class: 114
+      Script: {instanceID: 12710}
+    - Class: 114
+      Script: {instanceID: 12716}
+    - Class: 114
+      Script: {instanceID: 12758}
+    - Class: 114
+      Script: {instanceID: 12788}
+    - Class: 114
+      Script: {instanceID: 12866}
     - Class: 114
       Script: {instanceID: 12870}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 12890}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 12912}
     - Class: 114
-      Script: {instanceID: 13176}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 13210}
+      Script: {instanceID: 13090}
     - Class: 114
-      Script: {instanceID: 13384}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13556}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 13214}
     - Class: 114
-      Script: {instanceID: 14300}
+      Script: {instanceID: 13248}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 13378}
+    - Class: 114
+      Script: {instanceID: 13430}
+    - Class: 114
+      Script: {instanceID: 13600}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 13622}
+    - Class: 114
+      Script: {instanceID: 13634}
+    - Class: 114
+      Script: {instanceID: 13712}
+    - Class: 114
+      Script: {instanceID: 13716}
+    - Class: 114
+      Script: {instanceID: 18016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,6 +242,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: SizeChangeListener
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -207,10 +304,22 @@ ScriptsOnlyBuild:
     className: iTween
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: TextJuicer-Editor.dll
+    namespaceName: BrunoMikoski.TextJuicer.Modifiers
+    className: TextJuicerTransformModifierInspector
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 6f1ce399faffbf64082dbf9d525ffe35
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LinearClusterNodes
   - hash:
       serializedVersion: 2
       Hash: 72712369a7c681ad84fc255a5ec0b333
@@ -243,6 +352,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 4a4e98db98041680900a57faa5b629e5
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer.Modifiers
+    className: TextJuicerColorModifier
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -261,10 +376,16 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 940f9b2cde7549eea71e3f4f0f9098e4
+      Hash: 8cbf0093f672cc4377063826362a831b
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Namable
+    namespaceName: EventSystem
+    className: LocationEventInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 53996e64cb23d76699b0c4d3c872ec4e
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer.Modifiers
+    className: TextJuicerGradientModifier
   - hash:
       serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
@@ -279,13 +400,19 @@ ScriptsOnlyBuild:
     className: NetworkTransform
   - hash:
       serializedVersion: 2
+      Hash: 72e7f944c7ffa476000e50c447e15304
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: ProgressEventInfo
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: ef9952223b7e7fd52bbd9ce39d250133
+      Hash: 312d5ba964191284c089caa521836b58
     assemblyName: Assembly-CSharp.dll
     namespaceName: SwipeMenu
     className: SubMenuItem
@@ -303,6 +430,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: fdfc0f895ca5abdd5ce4cbed860e6e37
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: SelectionGraphicsSynchronizer
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -313,6 +446,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 6d45a50720e21db34289e77111d7d0db
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: SelectionCornersFitter
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -351,6 +490,12 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -375,10 +520,10 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: f40b79754544272c396c1b26391023e1
-    assemblyName: Assembly-CSharp.dll
+      Hash: 3523bf3c4db01c3ea6bd0ad8aa6bfcc4
+    assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: 
-    className: OptionButton
+    className: ImageCropper
   - hash:
       serializedVersion: 2
       Hash: 303ad70ce203ad874efe2965d0fbcff9
@@ -391,6 +536,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Analytics.Tracker.dll
     namespaceName: UnityEngine.Analytics
     className: AnalyticsTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 6a16c558bc244b0830858524b33e2e7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: ButtonEventHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -417,6 +568,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: ed7481355f2a46108633545c5a04510b
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer
+    className: TMP_TextJuicer
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -435,7 +592,7 @@ ScriptsOnlyBuild:
     className: NetworkLobbyManager
   - hash:
       serializedVersion: 2
-      Hash: a27af710b2d2cf35a0047708de39aaa6
+      Hash: 020f0b3feedfe8e23d96e7991d254b74
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueNode
@@ -447,10 +604,10 @@ ScriptsOnlyBuild:
     className: NetworkTransformVisualizer
   - hash:
       serializedVersion: 2
-      Hash: 530ceb14027d576731f9efd483544ac3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogueOptions
+      Hash: 72ca737499ab0d05c6f02cfdab34b006
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer.Modifiers
+    className: TextJuicerTransformModifier
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -471,19 +628,31 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: d5110be3e83b1dc5d95ff10eb6bf2685
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer.Modifiers
+    className: TextJuicerPerCharacterColorModifier
+  - hash:
+      serializedVersion: 2
       Hash: bde1de94e7b1e275120bdf8c2051daa9
     assemblyName: Assembly-CSharp.dll
     namespaceName: SwipeMenu
     className: TouchHandler
   - hash:
       serializedVersion: 2
-      Hash: b4fcd6eba1149d20b49597c6bfbda0a8
+      Hash: 93a52bcb80dff497ee2d873937f4e6a0
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: CircleGraphic
+  - hash:
+      serializedVersion: 2
+      Hash: a79daa8f82db0919124c1798fdb65631
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
   - hash:
       serializedVersion: 2
-      Hash: c7bc0b5748469e273dfe3df5f2ff5eec
+      Hash: eb8ceb39e12786c789084d2d9c90b4ca
     assemblyName: Assembly-CSharp.dll
     namespaceName: SwipeMenu
     className: Menu
@@ -513,6 +682,18 @@ ScriptsOnlyBuild:
     className: NetworkManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActionPanelScript
+  - hash:
+      serializedVersion: 2
+      Hash: edcff4de1ece095bb013174b20fda0e4
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer.Modifiers
+    className: TextJuicerWarpModifier
+  - hash:
+      serializedVersion: 2
       Hash: 76c39e84c18a68c7d3b1fcce474b9341
     assemblyName: Assembly-CSharp.dll
     namespaceName: SwipeMenu
@@ -523,6 +704,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 2c67e8cc63d28abb432dddd6665dd9b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: EntityEventInfo
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -537,6 +724,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 171699cdc8e028c53caffefe33b25aff
+    assemblyName: TextJuicer.dll
+    namespaceName: BrunoMikoski.TextJuicer
+    className: TextJuicerSequence
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -547,12 +740,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
-  - hash:
-      serializedVersion: 2
-      Hash: 38c1021a7be4c3735aab06acc860195a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogueOption
   - hash:
       serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
@@ -567,7 +754,7 @@ ScriptsOnlyBuild:
     className: MoveBetweenMenus
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1338a14211be79ff81ec931c540bc184
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
@@ -579,13 +766,19 @@ ScriptsOnlyBuild:
     className: UpdateTextColourOnMenuClick
   - hash:
       serializedVersion: 2
+      Hash: 2820398b750c0a543090454e8020fd55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: MasterEventInfo
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 417e4ccc5cd1435f37e6b2f3e26396c6
+      Hash: 69f005e3b85322c43da89cac347dfea3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dialogue
@@ -595,6 +788,18 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkStartPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 2e76a291437f5620c82bfb841bba129b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: SelectionMovementHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 6993194ef3a985380898c36d28e242b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Action
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -621,7 +826,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 1741532d4c24abc9a067c9a0c45babad
+      Hash: 08394d44917e3bbccc20771bba77753b
     assemblyName: Assembly-CSharp.dll
     namespaceName: SwipeMenu
     className: SwipeHandler
@@ -645,7 +850,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 781bfc2979baaa1bc171c61bdd68bd16
+      Hash: 0e8e7a3d2280e38490d810723511e810
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPC
@@ -657,10 +862,10 @@ ScriptsOnlyBuild:
     className: NetworkMigrationManager
   - hash:
       serializedVersion: 2
-      Hash: b4fcd6eba1149d20b49597c6bfbda0a8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Entity
+      Hash: 2ca4fb9a820b88d0d1f9c534dced7100
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: FontSizeSynchronizer
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -669,16 +874,16 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: fcbbb5acecb1fb13f133b2e1b364d86f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogueSystem
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 191ec8d78cf4468157cabc2c7db4053f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: DialogueEventInfo
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -693,10 +898,22 @@ ScriptsOnlyBuild:
     className: RotateSample
   - hash:
       serializedVersion: 2
+      Hash: ce7af2c29ef4ab7464f09ffbbf0ca771
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: ImageCropperDemo
+  - hash:
+      serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
     className: DataPrivacyButton
+  - hash:
+      serializedVersion: 2
+      Hash: f28dc43dcdef33875d7ba61e351bd1fa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: NamableEventInfo
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -717,16 +934,28 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: ee31cb54bd69a77b320c744d5bfc7f98
+      Hash: 36e395b57809c506758f051f20b9eb39
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: TextJuicer-Editor.dll
+    namespaceName: BrunoMikoski.TextJuicer
+    className: TMP_TextJuicerInspector
   - hash:
       serializedVersion: 2
       Hash: 661a58e8ad48cd435aa02e6a0521d164
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DemoSceneSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: 47a4344ebddf868cb56195324eebbe69
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: SelectionResizeHandler
   - hash:
       serializedVersion: 2
       Hash: 1dcb82730d983b77cec736c6ef19f814
@@ -747,7 +976,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: e2a60c3f5c439288111debaf4eedad18
+      Hash: 18228532905a434000589726befdf363
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpdateMenuItemOnClick
@@ -765,7 +994,7 @@ ScriptsOnlyBuild:
     className: NetworkAnimator
   - hash:
       serializedVersion: 2
-      Hash: fdf8cd6527dfb35db393e98a6e9d68db
+      Hash: 90eca7a9ee71089e7ba5366154e7060a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SwipeMenuAudioPlayer
@@ -795,16 +1024,28 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: f0d1aa1329b73105c69377a929b9c7fa
+      Hash: 9ca42208ac8a439d5e54c9ea0ab46e4e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueNodeSplit
+  - hash:
+      serializedVersion: 2
+      Hash: 5d447617b708619e9783946a4f61f7f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Foo
   - hash:
       serializedVersion: 2
       Hash: 9b895dcabbc1faf095c000c32d471fd0
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransformChild
+  - hash:
+      serializedVersion: 2
+      Hash: f70ae3b20f717ad3c6ab66d7ce5c0e57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameView
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -817,6 +1058,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkManagerHUD
+  - hash:
+      serializedVersion: 2
+      Hash: 15029cfd55a31871e06dbc4c5393cb7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Namable
+    className: Location
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
@@ -843,7 +1090,7 @@ ScriptsOnlyBuild:
     className: ShowTextOnMenuCentred
   - hash:
       serializedVersion: 2
-      Hash: b4d278bcca1055fd3c9791d00a07fcfd
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -853,6 +1100,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 529ae2aa8df07af738dc12bdb8ae4fe9
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: ImageCropperNamespace
+    className: FadeOverlayGraphic
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -873,7 +1126,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c0609606b606ae6b7cdb65821c137034
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Consumable
@@ -901,7 +1154,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 4c8937eb4c870d8a4b664788dc1b426f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Referencer
   platform: 13
   scenePathNames:
-  - Assets/TEXTBASEDRPG/GUILayout.unity
-  playerPath: D:/School/INPRO/Semester 3 - Mobile Game/INPRO Mobile Game/whatever.apk
+  - Assets/TEXTBASEDRPG/Game.unity
+  playerPath: C:/Users/Khejanin/Documents/INPROMOBILE/Game4.apk

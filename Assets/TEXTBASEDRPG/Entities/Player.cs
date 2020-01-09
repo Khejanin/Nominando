@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
+using EventSystem;
+using Namable;
 
 public class Player : Entity
 {
@@ -8,8 +8,23 @@ public class Player : Entity
     {
     }
 
-    public void talk(NPC npc)
+    public override void Inspect()
     {
-        npc.talkTo();
+        throw new NotImplementedException();
+    }
+
+    public override DialogueEventInfo TalkTo()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Take()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Back()
+    {
+        throw new NotImplementedException();
     }
 }

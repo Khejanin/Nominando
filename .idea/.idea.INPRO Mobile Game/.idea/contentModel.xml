@@ -1,13 +1,20 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Alex Nogueira\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Alex Nogueira\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_INPRO Mobile Game.-1054148848.00" t="ExcludeRecursive" />
-    <e p="D:\School\INPRO\Semester 3 - Mobile Game\INPRO Mobile Game" t="IncludeRecursive">
+    <e p="C:\Users\Khejanin\.Rider2019.1\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Khejanin\.Rider2019.1\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Khejanin\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Khejanin\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_INPRO Mobile Game.592537255.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Khejanin\Documents\INPROMOBILE" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ButtonEventHandler.cs" t="Include" />
+        <e p="Editor" t="Include">
+          <e p="EventSystemMasterEditor - Copy.cs" t="Include" />
+          <e p="EventSystemMasterEditor.cs" t="Include" />
+        </e>
         <e p="Plugins" t="Include">
           <e p="Pixelplacement" t="Include">
             <e p="iTween" t="Include">
@@ -55,6 +62,7 @@
             </e>
           </e>
         </e>
+        <e p="TestEvent.cs" t="Include" />
         <e p="TEXTBASEDRPG" t="Include">
           <e p="Consumable.cs" t="Include" />
           <e p="Dialogue" t="Include">
@@ -74,8 +82,10 @@
             <e p="Player.cs" t="Include" />
           </e>
           <e p="EventSystem" t="Include">
+            <e p="Event.cs" t="Include" />
             <e p="EventHandler.cs" t="Include" />
-            <e p="EventSystem.cs" t="Include" />
+            <e p="MasterEvent.cs" t="Include" />
+            <e p="MasterEventMono.cs" t="Include" />
           </e>
           <e p="Foo.cs" t="Include" />
           <e p="Game.cs" t="Include" />

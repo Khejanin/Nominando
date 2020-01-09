@@ -2,17 +2,15 @@
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Switches between demo scenes when enter key pressed.
+///     Switches between demo scenes when enter key pressed.
 /// </summary>
 public class DemoSceneSwitcher : MonoBehaviour
 {
-	public string sceneToLoad;
+    public string sceneToLoad;
 
-	// Update is called once per frame
-	void Update ()
-	{
-		if (Input.GetKeyUp (KeyCode.KeypadEnter) || Input.GetKeyUp ("return")) {
-			SceneManager.LoadScene (sceneToLoad);
-		}
-	}
+    // Update is called once per frame
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.KeypadEnter) || Input.GetKeyUp("return")) SceneManager.LoadScene(sceneToLoad);
+    }
 }

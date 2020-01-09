@@ -1,24 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.IO;
 using UnityEngine;
-using System.IO;
-using System.Threading.Tasks;
-using System.Xml;
-
 
 public class DialogueLoader : MonoBehaviour
 {
     // Start is called before the first frame update
-    static void loadDialogueXML(string dir)
+    private static void loadDialogueXML(string dir)
     {
-        string assetPath = Application.dataPath;
-        string path = assetPath + "/introductionText.xml";
+        var assetPath = Application.dataPath;
+        var path = assetPath + "/introductionText.xml";
         Debug.Log(path);
-        FileStream fs = new FileStream(path,FileMode.Open);
+        var fs = new FileStream(path, FileMode.Open);
     }
 
 
-   /* async Task TestReader(System.IO.Stream stream)
+    /* async Task TestReader(System.IO.Stream stream)
     {
         XmlReaderSettings settings = new XmlReaderSettings();
         settings.Async = true;
@@ -49,8 +44,7 @@ public class DialogueLoader : MonoBehaviour
     }
     */
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
     }
 }

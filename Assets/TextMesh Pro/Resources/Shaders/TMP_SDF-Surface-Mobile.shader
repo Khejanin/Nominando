@@ -82,7 +82,7 @@ SubShader {
 
 	ENDCG
 
-	// Pass to render object as a shadow caster
+	// Pass to render gameObject as a shadow caster
 	Pass
 	{
 		Name "Caster"

@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Namable;
 using UnityEngine;
 
 public abstract class Item : MonoBehaviour
 {
+    public Texture2D image;
 
     public string itemName;
 
     public int value;
-
-    public Texture2D image;
 
     public Item(string itemName, int value)
     {
@@ -18,5 +16,4 @@ public abstract class Item : MonoBehaviour
     }
 
     public abstract void use(Entity useOn);
-
 }

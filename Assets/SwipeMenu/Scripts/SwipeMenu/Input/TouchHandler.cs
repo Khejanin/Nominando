@@ -1,40 +1,37 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace SwipeMenu
 {
 	/// <summary>
-	/// Handles touches seperate from swipes. Supports mouse and mobile touch controls.
-	/// If a menu item is selected and isn't centred, then the menu item is animated to centre. If
-	/// a menu item is centred than its <see cref="MenuItem.OnClick"/> is invoked.
+	///     Handles touches seperate from swipes. Supports mouse and mobile touch controls.
+	///     If a menu item is selected and isn't centred, then the menu item is animated to centre. If
+	///     a menu item is centred than its <see cref="MenuItem.OnClick" /> is invoked.
 	/// </summary>
 	public class TouchHandler : MonoBehaviour
-	{
-		/// <summary>
-		/// If true, menu selection is handled.
-		/// </summary>
-		public bool handleTouches = true;
+    {
+        private SwipeHandler _swipeHandler;
 
-		/// <summary>
-		/// The selected menu item has to be centred for selectiion to occur.
-		/// </summary>
-		public bool requireMenuItemToBeCentredForSelectiion = true;
+        /// <summary>
+        ///     If true, menu selection is handled.
+        /// </summary>
+        public bool handleTouches = true;
 
-		private SwipeHandler _swipeHandler;
+        /// <summary>
+        ///     The selected menu item has to be centred for selectiion to occur.
+        /// </summary>
+        public bool requireMenuItemToBeCentredForSelectiion = true;
 
-		void Start ()
-		{
-			_swipeHandler = GetComponent<SwipeHandler> ();
-		}
+        private void Start()
+        {
+            _swipeHandler = GetComponent<SwipeHandler>();
+        }
 
-		void LateUpdate ()
-		{
-			if (!handleTouches)
-				return;
+        private void LateUpdate()
+        {
+            if (!handleTouches)
+                return;
 
-			if (_swipeHandler && _swipeHandler.isSwiping) {
-				return;
-			}
+            if (_swipeHandler && _swipeHandler.isSwiping) return;
 
 #if (!UNITY_EDITOR && !UNITY_STANDALONE && !UNITY_WEBPLAYER && !UNITY_WEBGL)
 			if (Input.touchCount > 0) {
@@ -43,34 +40,32 @@ namespace SwipeMenu
 				}
 			}
 #else
-            if (Input.GetMouseButtonUp (0) && Helper.GetMouseAxis(MouseAxis.x) == 0) {
-				CheckTouch (Input.mousePosition);
-			}
+            if (Input.GetMouseButtonUp(0) && Helper.GetMouseAxis(MouseAxis.x) == 0) CheckTouch(Input.mousePosition);
 #endif
-		}
+        }
 
-		private void CheckTouch (Vector3 screenPoint)
-		{
-			Ray touchRay = Camera.main.ScreenPointToRay (screenPoint);
-			RaycastHit hit;
-			
-			Physics.Raycast (touchRay, out hit);
-			
-			if (hit.collider != null && hit.collider.gameObject.CompareTag ("MenuItem")) {
+        private void CheckTouch(Vector3 screenPoint)
+        {
+            var touchRay = Camera.main.ScreenPointToRay(screenPoint);
+            RaycastHit hit;
 
-				var item = hit.collider.GetComponent<MenuItem> ();
+            Physics.Raycast(touchRay, out hit);
 
-				if (Menu.instance.MenuCentred (item)) {
-					Menu.instance.ActivateSelectedMenuItem (item);
-				} else {
-					Menu.instance.AnimateToTargetItem (item);
+            if (hit.collider != null && hit.collider.gameObject.CompareTag("MenuItem"))
+            {
+                var item = hit.collider.GetComponent<MenuItem>();
 
-					if (!requireMenuItemToBeCentredForSelectiion) {
-						Menu.instance.ActivateSelectedMenuItem (item);
-					}
-				}
-			}
-		}
+                if (Menu.instance.MenuCentred(item))
+                {
+                    Menu.instance.ActivateSelectedMenuItem(item);
+                }
+                else
+                {
+                    Menu.instance.AnimateToTargetItem(item);
 
-	}
+                    if (!requireMenuItemToBeCentredForSelectiion) Menu.instance.ActivateSelectedMenuItem(item);
+                }
+            }
+        }
+    }
 }

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public enum MouseAxis
 {
@@ -31,15 +30,10 @@ public static class Helper
 
         return axisValue;
 #else
-        float axisValue = 0f;
+        var axisValue = 0f;
         if (axis == MouseAxis.x)
-        {
             axisValue = Input.GetAxis("Mouse X");
-        }
-        else if (axis == MouseAxis.y)
-        {
-            axisValue = Input.GetAxis("Mouse Y");
-        }
+        else if (axis == MouseAxis.y) axisValue = Input.GetAxis("Mouse Y");
 
         return axisValue;
 #endif

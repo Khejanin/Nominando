@@ -1,16 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using EventSystem;
 using UnityEngine;
 
-[System.Serializable]
+[CreateAssetMenu(fileName = "New DialogueNodeSplit", menuName = "Dialogue/SplitNode")]
 public class DialogueNodeSplit : DialogueNode
 {
-
-    public DialogueOptions options;
-
-    public DialogueNode chooseOption(DialogueOption option)
-    {
-        return option.next;
-    }
-
+    public List<EventInfo> options = new List<EventInfo>();
 }

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7974d3eeeac94d8a9674f6245f42b1e6, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  uniqueID: SPACE
+  name: Space
+  image: {fileID: 21300000, guid: 0963d93c191a06f4e83a8c01ee90f59e, type: 3}
+  namableDialogue: {fileID: 0}
+  imageDialogue: {fileID: 0}
+  imageHeight: 1080
+  imageWidth: 1920
+  namableState: 0
+  entities:
+  - {fileID: 11400000, guid: be353745ba4bda84ab0bce61a70485f4, type: 2}
+  locations:
+  - {fileID: 11400000, guid: 59c44146805039947a23c3318c8853e8, type: 2}
+  actions: []
+  hideEntitiesNr: 0
+  hideLocationsNr: 0
+  hideActionsNr: 0

@@ -1,17 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Skill : MonoBehaviour
 {
+    private string description;
+
+    private Texture2D image;
 
 
-    float intelligenceMultiplier;
-    int requiredArcana;
+    private float intelligenceMultiplier;
+    private int requiredArcana;
 
-    string skillName;
-    string description;
-
-    Texture2D image;
-
+    private string skillName;
 }
