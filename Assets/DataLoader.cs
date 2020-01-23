@@ -31,7 +31,6 @@ public class DataLoader : MonoBehaviour
 
    private void Start()
    {
-       settingsButton.onClick.AddListener(SettingsButtonClicked);
        saveButton.onClick.AddListener(SaveButtonClicked);
        loadButton.onClick.AddListener(LoadButtonClicked);
        //try establish connection to server
@@ -47,11 +46,6 @@ public class DataLoader : MonoBehaviour
         public Sprite sprite;
         public Namable.Namable.NAMABLE_STATE state;
     }
-
-   public void SettingsButtonClicked()
-   {
-       saveLoadPanel.SetActive(true);
-   }
 
 
    public void SaveButtonClicked()

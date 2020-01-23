@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b54a3d5a91fcfb4ebebda16df58b72f, type: 3}
+  m_Name: P1_SolwaImageLinearEnd3
+  m_EditorClassIdentifier: 
+  dialogueText: As you get your head up from the ground, the sun is blinding you
+    so you can barely see, it must be noon right now!
+  insertText: 
+  next: {fileID: 11400000, guid: bea40f1276e38d14f9a63b5bfe66d187, type: 2}
+  holdsEvent: 0
+  info: {fileID: 0}

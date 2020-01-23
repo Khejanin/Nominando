@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using EventSystem;
+using Lean.Gui;
 using Namable;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class Game : MonoBehaviour
@@ -12,14 +14,13 @@ public class Game : MonoBehaviour
     //private LocationSystem _locationSystem;
     //private EntitySystem _entitySystem;
 
-    public GameObject cameraPanel;
+    public GameObject locationPanel,cameraPanel,nameableInput,startMenu,loadingScreen,loadSavePanel;
 
     public static Location currentLocation;
 
     public bool cameraTestMode;
 
     private bool inputEnabled = true;
-    public GameObject LocationPanel;
 
     public List<Location> objectos;
 
@@ -27,31 +28,67 @@ public class Game : MonoBehaviour
 
     public MasterEventInfo startMasterEvent;
 
-    // Start is called before the first frame update
-    public void StartGame()
+
+    private void InitialPanelState()
     {
-        //TouchScreenKeyboard.Open("test", TouchScreenKeyboardType.Default, false, false, false, false, "", 32);
-        //Debug.Log(TouchScreenKeyboard.isSupported);
-        if (!cameraTestMode)
+        cameraPanel.SetActive(false);
+        startMenu.SetActive(true);
+        loadingScreen.SetActive(true);
+        loadSavePanel.GetComponent<LeanWindow>().TurnOff();
+    }
+    
+    private void Start()
+    {
+        EventSystem.EventSystem.RegisterListener<GameStartEventInfo>(HandleStartGameEvent);
+        EventSystem.EventSystem.RegisterListener<LoginEventInfo>(HandleLoginEvent);
+        NameableSystem.SetElements(locationPanel,cameraPanel,nameableInput);
+        InitialPanelState();
+    }
+
+    private void HandleLoginEvent(LoginEventInfo loginEventInfo)
+    {
+        switch (loginEventInfo.eventState)
         {
-            //_dialogueSystem = DialogueSystem.GetDialogueSystem();
-            //_locationSystem = LocationSystem.GetLocationSystem();
-            //_entitySystem = EntitySystem.GetEntitySystem();
-            LocationSystem.Start();
-            DialogueSystem.Start();
-            EntitySystem.Start();
-            NameableSystem.Start();
-            ProgressSystem.Start();
-            
-            if (startMasterEvent != null) EventSystem.EventSystem.FireEvent(startMasterEvent);
-        }
-        else
-        {
-            var mCamera = new WebCamTexture();
-            cameraPanel.GetComponent<Image>().material.mainTexture = mCamera;
-            mCamera.Play();
+            case LoginEventInfo.LoginEventState.LOGIN_SUCCESSFUL:
+                startMenu.SetActive(false);
+                break;
+            case LoginEventInfo.LoginEventState.LOGOUT:
+                InitialPanelState();
+                break;
+            case LoginEventInfo.LoginEventState.REGISTRATION_SUCCESSFUL:
+                startMenu.SetActive(false);
+                break;
         }
     }
+    
+    
+    
+    private void HandleStartGameEvent(GameStartEventInfo gameStartEventInfo)
+    {
+        LocationSystem.Start();
+        DialogueSystem.Start();
+        EntitySystem.Start();
+        ProgressSystem.Start();
+        loadingScreen.SetActive(false);
+        StartGame(gameStartEventInfo.progress);
+    }
+    
+    // Start is called before the first frame update
+    public void StartGame(long progress)
+    {
+        switch (progress)
+        {
+            case -1:
+                var mCamera = new WebCamTexture();
+                cameraPanel.GetComponent<Image>().material.mainTexture = mCamera;
+                mCamera.Play();
+                break;
+            case 0:
+                if (startMasterEvent != null) EventSystem.EventSystem.FireEvent(startMasterEvent);
+                break;
+        }
+    }
+    
 
     // Update is called once per frame
     private void Update()
@@ -109,7 +146,7 @@ public class Game : MonoBehaviour
         {
             Debug.Log(croppedImage.width);
             Debug.Log(croppedImage.height);
-            LocationPanel.GetComponent<Image>().sprite = Sprite.Create(croppedImage,
+            locationPanel.GetComponent<Image>().sprite = Sprite.Create(croppedImage,
                 new Rect(0, 0, croppedImage.width, croppedImage.height), new Vector2(0.5f, 0.5f));
             inputEnabled = true;
         }

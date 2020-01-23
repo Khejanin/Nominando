@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179705bbc04448ceabd50297c384d011, type: 3}
+  m_Name: P1_SolwaDogBellChoiceEvent1
+  m_EditorClassIdentifier: 
+  buttonOptionString: Ring the bell politely
+  EventInfoString: 
+  dialogue: {fileID: 11400000, guid: 169be17c486cc764b90c654b70efa2e3, type: 2}
+  eventType: 1
+  node: {fileID: 11400000, guid: f4bc2936e564d1049b31ab43dc7d0295, type: 2}
+  juicy: 0
+  enableCustomOption: 0

@@ -11,24 +11,43 @@ ScriptsOnlyBuild:
     - ImageCropperNamespace.SelectionResizeHandler
     - ImageCropperNamespace.SizeChangeListener
     Assembly-CSharp.dll:
+    - APIHandler
     - Action
     - ActionPanelScript
     - CameraController
+    - ClearAllDataButtonScript
+    - DataLoader
     - Dialogue
     - DialogueNode
     - DialogueNodeSplit
     - EventSystem.ButtonEventHandler
     - EventSystem.DialogueEventInfo
-    - EventSystem.EntityEventInfo
     - EventSystem.LocationEventInfo
     - EventSystem.MasterEventInfo
-    - EventSystem.NamableEventInfo
     - EventSystem.ProgressEventInfo
     - Game
+    - GameInitializer
     - GameView
+    - HistoryTextScript
+    - Lean.Gui.LeanButton
+    - Lean.Gui.LeanPulse
+    - Lean.Gui.LeanWindow
+    - Lean.Transition.LeanTransition
+    - Lean.Transition.Method.LeanCanvasGroupAlpha
+    - Lean.Transition.Method.LeanCanvasGroupBlocksRaycasts
+    - Lean.Transition.Method.LeanCanvasGroupInteractable
+    - Lean.Transition.Method.LeanGraphicColor
+    - Lean.Transition.Method.LeanJoin
+    - Lean.Transition.Method.LeanJoinDelay
+    - Lean.Transition.Method.LeanPlaySound
+    - Lean.Transition.Method.LeanRectTransformAnchoredPositionY
+    - Lean.Transition.Method.LeanTransformLocalScaleXY
+    - LoginButtonScript
     - NPC
     - Namable.Location
-    - Referencer
+    - NotificationTextScript
+    - RegisterButtonScript
+    - SimpleLoading
     TextJuicer.dll:
     - BrunoMikoski.TextJuicer.Modifiers.TextJuicerGradientModifier
     - BrunoMikoski.TextJuicer.Modifiers.TextJuicerTransformModifier
@@ -103,118 +122,158 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11206}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11428}
+      Script: {instanceID: 11456}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 11500}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11534}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11548}
     - Class: 114
-      Script: {instanceID: 11624}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11628}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 11692}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11616}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11890}
+      Script: {instanceID: 11674}
     - Class: 114
-      Script: {instanceID: 11926}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 11968}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 12070}
+      Script: {instanceID: 11892}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 11998}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 12094}
     - Class: 114
-      Script: {instanceID: 12426}
+      Script: {instanceID: 12096}
     - Class: 114
-      Script: {instanceID: 12450}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12592}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12716}
+      Script: {instanceID: 12290}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12354}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12870}
+      Script: {instanceID: 12466}
     - Class: 114
-      Script: {instanceID: 12890}
+      Script: {instanceID: 12524}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 13090}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 13190}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 13214}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 12838}
     - Class: 114
-      Script: {instanceID: 13378}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 13430}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 13006}
     - Class: 114
-      Script: {instanceID: 13604}
+      Script: {instanceID: 13010}
     - Class: 114
-      Script: {instanceID: 13622}
+      Script: {instanceID: 13032}
     - Class: 114
-      Script: {instanceID: 13634}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13712}
+      Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 13716}
+      Script: {instanceID: 13178}
     - Class: 114
-      Script: {instanceID: 18016}
+      Script: {instanceID: 13250}
+    - Class: 114
+      Script: {instanceID: 13286}
+    - Class: 114
+      Script: {instanceID: 13336}
+    - Class: 114
+      Script: {instanceID: 13358}
+    - Class: 114
+      Script: {instanceID: 13380}
+    - Class: 114
+      Script: {instanceID: 13414}
+    - Class: 114
+      Script: {instanceID: 13452}
+    - Class: 114
+      Script: {instanceID: 13522}
+    - Class: 114
+      Script: {instanceID: 13552}
+    - Class: 114
+      Script: {instanceID: 13606}
+    - Class: 114
+      Script: {instanceID: 13734}
+    - Class: 114
+      Script: {instanceID: 13742}
+    - Class: 114
+      Script: {instanceID: 13790}
+    - Class: 114
+      Script: {instanceID: 13794}
+    - Class: 114
+      Script: {instanceID: 13818}
+    - Class: 114
+      Script: {instanceID: 13830}
+    - Class: 114
+      Script: {instanceID: 13916}
+    - Class: 114
+      Script: {instanceID: 13922}
+    - Class: 114
+      Script: {instanceID: 13924}
+    - Class: 114
+      Script: {instanceID: 13990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,7 +288,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: a1fa9359adc1bc530e0fbe35dba9445a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: LoginEventInfo
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -250,6 +317,12 @@ ScriptsOnlyBuild:
     className: SizeChangeListener
   - hash:
       serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPositionZ
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -268,6 +341,36 @@ ScriptsOnlyBuild:
     className: ExampleCharacterSelector
   - hash:
       serializedVersion: 2
+      Hash: c567ada6c07ef421158ac9840555436d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Examples
+    className: LeanAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 773bffb517b005596ee23b6905687a43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalEulerAngles
+  - hash:
+      serializedVersion: 2
+      Hash: d61ca890488f3d89fc2e6998328913e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanJoinInsert
+  - hash:
+      serializedVersion: 2
+      Hash: 5bddb32bcb848f51c6efb9a0b86ba855
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: simplerotate
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RepeatFromCode
+  - hash:
+      serializedVersion: 2
       Hash: 5bd9a19c7b5f76c563418e28f48a561b
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -278,6 +381,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 438e840b6c09cbdb49fcc4a0e9e2b772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformPosition
   - hash:
       serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
@@ -352,6 +461,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 616c893a254e7763d916410411834929
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataLoader
+  - hash:
+      serializedVersion: 2
       Hash: 4a4e98db98041680900a57faa5b629e5
     assemblyName: TextJuicer.dll
     namespaceName: BrunoMikoski.TextJuicer.Modifiers
@@ -362,6 +477,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 1d23007f26624b3e9d60e09f430492cc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanOrientation
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -388,6 +509,12 @@ ScriptsOnlyBuild:
     className: TextJuicerGradientModifier
   - hash:
       serializedVersion: 2
+      Hash: ff4ed0277d894331a213aecd8eebedee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSafeArea
+  - hash:
+      serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -400,10 +527,34 @@ ScriptsOnlyBuild:
     className: NetworkTransform
   - hash:
       serializedVersion: 2
-      Hash: 72e7f944c7ffa476000e50c447e15304
+      Hash: 3eec3d0f549eeeef6b133056a3e1f91a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchoredPositionY
+  - hash:
+      serializedVersion: 2
+      Hash: d7c6011def045d229aa828e99a9e099d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoginButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: 399d442ba99bfa8c294866fef3d0faac
     assemblyName: Assembly-CSharp.dll
     namespaceName: EventSystem
     className: ProgressEventInfo
+  - hash:
+      serializedVersion: 2
+      Hash: a1fcc866397a836af63817d24343caca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Common.Examples
+    className: LeanDocumentation
+  - hash:
+      serializedVersion: 2
+      Hash: f093135299680bd0f0fddd3ef8ab9e88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: APIHandler
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -416,6 +567,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: SwipeMenu
     className: SubMenuItem
+  - hash:
+      serializedVersion: 2
+      Hash: 2dabd3fc4fdd21baa7eb1815cf3d3ef4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanGraphicColor
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -448,10 +605,22 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HistoryTextScript
+  - hash:
+      serializedVersion: 2
       Hash: 6d45a50720e21db34289e77111d7d0db
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: ImageCropperNamespace
     className: SelectionCornersFitter
+  - hash:
+      serializedVersion: 2
+      Hash: a822f77330f23f7c88433a8640dbf53b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeanDragToTarget
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -466,6 +635,18 @@ ScriptsOnlyBuild:
     className: NetworkProximityChecker
   - hash:
       serializedVersion: 2
+      Hash: e5a662e2ea6fc278bd41837326ae76b1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformRotate
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loadingbar
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -476,6 +657,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: ec89c088ecbdeae79810165b30bb98e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchorMax
   - hash:
       serializedVersion: 2
       Hash: 4e9333594897a1fb8b136ad2eae996c7
@@ -490,16 +677,52 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: 0d85f4fda1e0e70cd92c084d12f05cdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanMoveToTop
+  - hash:
+      serializedVersion: 2
+      Hash: e42df03a00dc2c71afedf0af09f062e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalRotation
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: 6e00fea609a4285862c9de5c2d6dcf5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSelectionManager
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 15b05eacffe39e7450c6344cec41cc6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanCanvasGroupBlocksRaycasts
+  - hash:
+      serializedVersion: 2
+      Hash: 773bffb517b005596ee23b6905687a43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformEulerAngles
+  - hash:
+      serializedVersion: 2
+      Hash: 5bddb32bcb848f51c6efb9a0b86ba855
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: rotatetotate
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -520,6 +743,24 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 0da877ad61f6f92a3d18e7ff69459997
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanInsert
+  - hash:
+      serializedVersion: 2
+      Hash: abb74232924aeae3cb0affcdf05292df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Loading
+  - hash:
+      serializedVersion: 2
+      Hash: cf326ce230964136ae1d36b9f43d1279
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanToggle
+  - hash:
+      serializedVersion: 2
       Hash: 3523bf3c4db01c3ea6bd0ad8aa6bfcc4
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: 
@@ -536,6 +777,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Analytics.Tracker.dll
     namespaceName: UnityEngine.Analytics
     className: AnalyticsTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 2af0b4e2fa1140f15feeffd03f4c66af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameInitializer
   - hash:
       serializedVersion: 2
       Hash: 6a16c558bc244b0830858524b33e2e7d
@@ -562,6 +809,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 99ccdc335ab6ab11c24e05039f42ee96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformPivotY
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -572,6 +825,12 @@ ScriptsOnlyBuild:
     assemblyName: TextJuicer.dll
     namespaceName: BrunoMikoski.TextJuicer
     className: TMP_TextJuicer
+  - hash:
+      serializedVersion: 2
+      Hash: 99ccdc335ab6ab11c24e05039f42ee96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformPivotX
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -586,13 +845,31 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 70c96fba1c0516566ce8bc1fd538f221
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSwipe
+  - hash:
+      serializedVersion: 2
+      Hash: cf326ce230964136ae1d36b9f43d1279
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanWindow
+  - hash:
+      serializedVersion: 2
+      Hash: b885240afd953a0cae0183d0e1ca924b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanHover
+  - hash:
+      serializedVersion: 2
       Hash: 265cf27ba050d55ff33a8acab4ded6c0
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkLobbyManager
   - hash:
       serializedVersion: 2
-      Hash: 020f0b3feedfe8e23d96e7991d254b74
+      Hash: 361d4a85da1191f6e25900b8a1758749
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueNode
@@ -610,16 +887,34 @@ ScriptsOnlyBuild:
     className: TextJuicerTransformModifier
   - hash:
       serializedVersion: 2
+      Hash: f17ecd00eb0dc6aee44ebcea2249ff0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanButton
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
   - hash:
       serializedVersion: 2
+      Hash: 4f3f10dad89d5225a1e265a310b83997
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanResize
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: b57385816852c6e2fbdf9c2c3b832e02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanCanvasGroupInteractable
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -646,7 +941,7 @@ ScriptsOnlyBuild:
     className: CircleGraphic
   - hash:
       serializedVersion: 2
-      Hash: a79daa8f82db0919124c1798fdb65631
+      Hash: 039a17ac633f1a58e6a7ad796ee8fd85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -700,6 +995,12 @@ ScriptsOnlyBuild:
     className: MenuItem
   - hash:
       serializedVersion: 2
+      Hash: e6ae43036653ccf5c1c1f0ccde24349f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition
+    className: LeanTransition
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -710,6 +1011,30 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: EventSystem
     className: EntityEventInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 644395a678e5f3cb21eb70f933e272aa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EventSystem
+    className: GameStartEventInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanConstrainToParent
+  - hash:
+      serializedVersion: 2
+      Hash: 92c8dcd3cb9c0387d4e7ce81ce6e1a0c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanHitbox
+  - hash:
+      serializedVersion: 2
+      Hash: 4e194829a35aa19b7596029d08064165
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanCanvasGroupAlpha
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -724,10 +1049,28 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 060508d3d8b9b02f14226c6f4d5eb3a6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchorMin
+  - hash:
+      serializedVersion: 2
       Hash: 171699cdc8e028c53caffefe33b25aff
     assemblyName: TextJuicer.dll
     namespaceName: BrunoMikoski.TextJuicer
     className: TextJuicerSequence
+  - hash:
+      serializedVersion: 2
+      Hash: 316e863320b8c87159004b8b8d6eeace
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loadingtext
+  - hash:
+      serializedVersion: 2
+      Hash: 6913b40f5fcc093535b882698638cdaa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSelection
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -740,6 +1083,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: e42df03a00dc2c71afedf0af09f062e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformRotation
   - hash:
       serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
@@ -760,10 +1109,28 @@ ScriptsOnlyBuild:
     className: Inventory
   - hash:
       serializedVersion: 2
+      Hash: 7f28288592a4a21fe80e28c3d4db9434
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSwitch
+  - hash:
+      serializedVersion: 2
       Hash: 4ce15e99c635d2567873d27549d1f16f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpdateTextColourOnMenuClick
+  - hash:
+      serializedVersion: 2
+      Hash: 4326d1e3ad2be563855e0ee0cac8ddb9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Common.Examples
+    className: LeanCircuit
+  - hash:
+      serializedVersion: 2
+      Hash: 73437ea0e6a35ab838665ace8823e96b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanAudioSourceVolume
   - hash:
       serializedVersion: 2
       Hash: 2820398b750c0a543090454e8020fd55
@@ -778,7 +1145,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 69f005e3b85322c43da89cac347dfea3
+      Hash: fe5eb692df6ddbbc032e6254f4e36fa1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dialogue
@@ -796,10 +1163,34 @@ ScriptsOnlyBuild:
     className: SelectionMovementHandler
   - hash:
       serializedVersion: 2
+      Hash: 5bc47267618bc4d3eaef6e24b8fb6e18
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanTooltipData
+  - hash:
+      serializedVersion: 2
       Hash: 6993194ef3a985380898c36d28e242b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Action
+  - hash:
+      serializedVersion: 2
+      Hash: d0ec4daefd329c5ea75e565c364bd88b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanSpriteRendererColor
+  - hash:
+      serializedVersion: 2
+      Hash: 1cd2028c8df28a22da8a16da06b4d21f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanWindowCloser
+  - hash:
+      serializedVersion: 2
+      Hash: f2471580d5a5ae746aab989a058552b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSelectionHighlight
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -812,6 +1203,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 4c91c7234b655547806e71ce56e16d88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchoredPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 16a65df1f1d0d40a4936ea7d0dd889d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Examples
+    className: LeanAnimationKeyPress
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -832,6 +1235,12 @@ ScriptsOnlyBuild:
     className: SwipeHandler
   - hash:
       serializedVersion: 2
+      Hash: e2b4e5496a32bdc2fef6a99c1d467a42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSelectionPriority
+  - hash:
+      serializedVersion: 2
       Hash: e1300922cc039f41ab46a47f4cb05898
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -850,7 +1259,13 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 0e8e7a3d2280e38490d810723511e810
+      Hash: a105e641910b141bffb1b3dd9d0eb1c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanGameObjectSetActive
+  - hash:
+      serializedVersion: 2
+      Hash: 692f02d88959d0221f4e526a15765632
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPC
@@ -874,13 +1289,61 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 17893e2521c89c54eb92d0b861475d8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanTooltip
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPositionY
+  - hash:
+      serializedVersion: 2
+      Hash: 2318e4390ff9ea042afdc0583c3e9070
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformPivot
+  - hash:
+      serializedVersion: 2
+      Hash: 564363b71973ff9b7c6dafd1d3a1fcfb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Common.Examples
+    className: LeanLinkTo
+  - hash:
+      serializedVersion: 2
+      Hash: 83540cc1c8ca8130c1d73cb8a25d1a02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanJoin
+  - hash:
+      serializedVersion: 2
+      Hash: e5707d51393ac44074d47e44c9af30df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Examples
+    className: LeanAnimationRepeater
+  - hash:
+      serializedVersion: 2
+      Hash: 51ea7d22d97363b4a27ec6c69a1d3593
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformSizeDelta
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 191ec8d78cf4468157cabc2c7db4053f
+      Hash: 09eae5a1a7bcd7ef91ee47e07752d772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformSetAsLastSibling
+  - hash:
+      serializedVersion: 2
+      Hash: 76c2b203371c7d92f1597ee9c9829922
     assemblyName: Assembly-CSharp.dll
     namespaceName: EventSystem
     className: DialogueEventInfo
@@ -910,16 +1373,34 @@ ScriptsOnlyBuild:
     className: DataPrivacyButton
   - hash:
       serializedVersion: 2
+      Hash: 82fa046aa9efa49c6a613713c447cc65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanJoinDelay
+  - hash:
+      serializedVersion: 2
       Hash: f28dc43dcdef33875d7ba61e351bd1fa
     assemblyName: Assembly-CSharp.dll
     namespaceName: EventSystem
     className: NamableEventInfo
   - hash:
       serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NotificationTextScript
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2fde151a1d7e7e7fd29e909ab9b580d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalScale
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -934,10 +1415,16 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 36e395b57809c506758f051f20b9eb39
+      Hash: 1eb37da936c4e8713a98e6c14cb7f1ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClearAllDataButtonScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -950,6 +1437,24 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DemoSceneSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: bbac40a1480feb9b48e01287a3776b69
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanDelay
+  - hash:
+      serializedVersion: 2
+      Hash: 82af3f7c59437e49d9ebf553b0920fff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalScaleXY
+  - hash:
+      serializedVersion: 2
+      Hash: 438e840b6c09cbdb49fcc4a0e9e2b772
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPosition
   - hash:
       serializedVersion: 2
       Hash: 47a4344ebddf868cb56195324eebbe69
@@ -976,6 +1481,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 0267e9c853a8f88924478d2391ebfcf5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanEvent
+  - hash:
+      serializedVersion: 2
       Hash: 18228532905a434000589726befdf363
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1000,16 +1511,58 @@ ScriptsOnlyBuild:
     className: SwipeMenuAudioPlayer
   - hash:
       serializedVersion: 2
+      Hash: 3eec3d0f549eeeef6b133056a3e1f91a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanRectTransformAnchoredPositionX
+  - hash:
+      serializedVersion: 2
+      Hash: b09d374bef1bdeac117377c79eb5a565
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanJoystick
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
   - hash:
       serializedVersion: 2
+      Hash: 3c058b4f4bcc62199c88291902a39aec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanPulse
+  - hash:
+      serializedVersion: 2
+      Hash: f147652a9a20c948fbededed6e9a9ed1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanPlaySound
+  - hash:
+      serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loadingcolorful
+  - hash:
+      serializedVersion: 2
+      Hash: c33e1827b57db2655cef60e3c7083fee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanSizer
+  - hash:
+      serializedVersion: 2
+      Hash: efe32ece76f8f16dd19529aee2ab530f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanShake
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1024,16 +1577,34 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 9ca42208ac8a439d5e54c9ea0ab46e4e
+      Hash: a99ab0ddc19c8a3c3defc16a5c9053ea
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueNodeSplit
+  - hash:
+      serializedVersion: 2
+      Hash: cf2971aed6dda9f022c108afffe10515
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Gui
+    className: LeanDrag
   - hash:
       serializedVersion: 2
       Hash: 5d447617b708619e9783946a4f61f7f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Foo
+  - hash:
+      serializedVersion: 2
+      Hash: 42bdfa9c19fa0e22d271f8494a697258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformLocalPositionX
+  - hash:
+      serializedVersion: 2
+      Hash: 4f4d6294c326e74dc4565637f2fe0b61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTime
   - hash:
       serializedVersion: 2
       Hash: 9b895dcabbc1faf095c000c32d471fd0
@@ -1060,10 +1631,16 @@ ScriptsOnlyBuild:
     className: NetworkManagerHUD
   - hash:
       serializedVersion: 2
-      Hash: 15029cfd55a31871e06dbc4c5393cb7e
+      Hash: 5eccc58befbfe21ae626f7d393403822
     assemblyName: Assembly-CSharp.dll
     namespaceName: Namable
     className: Location
+  - hash:
+      serializedVersion: 2
+      Hash: 4c8937eb4c870d8a4b664788dc1b426f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Referencer
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
@@ -1082,6 +1659,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: b832ab50b63008474ad695a709e1bd9a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanImageFillAmount
   - hash:
       serializedVersion: 2
       Hash: 760b575e553c5bc62c2ad60c12c4dd70
@@ -1108,10 +1691,22 @@ ScriptsOnlyBuild:
     className: FadeOverlayGraphic
   - hash:
       serializedVersion: 2
+      Hash: a68b277d44f7617579505c2abab5e520
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanTransformTranslate
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 5bddb32bcb848f51c6efb9a0b86ba855
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SimpleLoading
   - hash:
       serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
@@ -1150,17 +1745,23 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 03ed1c0fc9a7a446ceb61a0c94145004
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RegisterButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: 8cc4b25d269bb18a5faaac40cc69eefd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lean.Transition.Method
+    className: LeanQueue
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 4c8937eb4c870d8a4b664788dc1b426f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Referencer
   platform: 13
   scenePathNames:
   - Assets/TEXTBASEDRPG/Game.unity
-  playerPath: C:/Users/Khejanin/Documents/INPROMOBILE/Game4.apk
+  playerPath: D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Game-Production-4.apk

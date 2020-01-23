@@ -14,6 +14,7 @@ TagManager:
   - Fuel
   - ObjectFurnace
   - PhoneCamera
+  - DragBox
   layers:
   - Default
   - TransparentFX

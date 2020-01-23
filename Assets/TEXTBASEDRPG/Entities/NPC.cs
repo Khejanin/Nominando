@@ -6,7 +6,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New NPC", menuName = "Entities/NPC")]
 public class NPC : Entity
 {
-    public DialogueEventInfo dialogueEventInfo;
 
     public DialogueNode greeting;
 
@@ -23,8 +22,18 @@ public class NPC : Entity
 
     public override DialogueEventInfo TalkTo()
     {
+        DialogueEventInfo dialogueEventInfo = CreateInstance<DialogueEventInfo>();
+        if (dialogueState < dialogues.Count)
+        {
+            dialogueEventInfo.dialogue = dialogues[dialogueState];
+        }
+        else dialogueEventInfo.dialogue = dialogues[0];
+        dialogueEventInfo.eventType = DIALOGUE_EVENT_TYPE.StartDialogue;
+        dialogueEventInfo.juicy = juicy;
+        dialogueEventInfo.SetDefaultButtonStrings();
         return dialogueEventInfo;
     }
+
 
     public override void Take()
     {
@@ -34,5 +43,16 @@ public class NPC : Entity
     public override void Back()
     {
         throw new NotImplementedException();
+    }
+
+    public override APIHandler.EntityUploadJSON getUploadData()
+    {
+        APIHandler.EntityUploadJSON upload = new APIHandler.EntityUploadJSON();
+        upload.isNamable = true;
+        upload.Name = name;
+        upload.State = namableState.ToString();
+        upload.UniqueId = uniqueID;
+        upload.dialogueState = dialogueState;
+        return upload;
     }
 }

@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{28A69AB1-950E-C7D7-553D-4D3C172DEBD4}</ProjectGuid>
+    <ProjectGuid>{6678C031-CB66-CCBC-68DE-206E0F6D9BAB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -25,7 +25,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_0;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TABLELAYOUT_PRESENT;TEXTMESHPRO_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_0;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TABLELAYOUT_PRESENT;TEXTMESHPRO_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -58,12 +58,102 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\APIHandler.cs" />
      <Compile Include="Assets\ActionPanelScript.cs" />
      <Compile Include="Assets\ButtonEventHandler.cs" />
      <Compile Include="Assets\CameraController.cs" />
+     <Compile Include="Assets\ClearAllDataButtonScript.cs" />
      <Compile Include="Assets\DataLoader.cs" />
+     <Compile Include="Assets\GameInitializer.cs" />
      <Compile Include="Assets\GameView.cs" />
+     <Compile Include="Assets\HistoryTextScript.cs" />
+     <Compile Include="Assets\Lean\Common\Examples\Scripts\LeanCircuit.cs" />
+     <Compile Include="Assets\Lean\Common\Examples\Scripts\LeanDocumentation.cs" />
+     <Compile Include="Assets\Lean\Common\Examples\Scripts\LeanLinkTo.cs" />
+     <Compile Include="Assets\Lean\Common\Scripts\LeanHelper.cs" />
+     <Compile Include="Assets\Lean\Common\Scripts\LeanInspector.cs" />
+     <Compile Include="Assets\Lean\GUI\LeanDragToTarget.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanButton.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanConstrainToParent.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanDrag.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanGui.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanHitbox.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanHover.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanJoystick.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanMoveToTop.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanOrientation.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanPulse.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanResize.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSafeArea.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelection.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionHighlight.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionManager.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSelectionPriority.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanShake.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSizer.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSwipe.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanSwitch.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanToggle.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanTooltip.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanTooltipData.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanWindow.cs" />
+     <Compile Include="Assets\Lean\GUI\Scripts\LeanWindowCloser.cs" />
+     <Compile Include="Assets\Lean\Transition\Examples\Scripts\LeanAnimation.cs" />
+     <Compile Include="Assets\Lean\Transition\Examples\Scripts\LeanAnimationKeyPress.cs" />
+     <Compile Include="Assets\Lean\Transition\Examples\Scripts\LeanAnimationRepeater.cs" />
+     <Compile Include="Assets\Lean\Transition\Examples\Scripts\RepeatFromCode.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\AudioSource\LeanAudioSourceVolume.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\GameObject\LeanGameObjectSetActive.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanDelay.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanEvent.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanGet.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanInsert.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanJoin.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanJoinDelay.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanJoinInsert.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanPlaySound.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanQueue.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\LeanTime.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\SpriteRenderer\LeanSpriteRendererColor.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformEulerAngles.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalEulerAngles.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalPosition.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalPositionX.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalPositionY.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalPositionZ.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalRotation.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformLocalScale.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformPosition.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformRotate.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformRotation.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\Transform\LeanTransformTranslate.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanCanvasGroupAlpha.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanCanvasGroupBlocksRaycasts.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanCanvasGroupInteractable.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanGraphicColor.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanImageFillAmount.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformAnchorMax.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformAnchorMin.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformAnchoredPosition.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformAnchoredPositionX.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformAnchoredPositionY.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformPivot.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformPivotX.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformPivotY.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformSetAsLastSibling.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanRectTransformSizeDelta.cs" />
+     <Compile Include="Assets\Lean\Transition\Methods\UI\LeanTransformLocalScaleXY.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanEase.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanMethod.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanPlayer.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanState.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanStateWithTarget.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanTime.cs" />
+     <Compile Include="Assets\Lean\Transition\Scripts\LeanTransition.cs" />
+     <Compile Include="Assets\LoginButtonScript.cs" />
+     <Compile Include="Assets\NotificationTextScript.cs" />
      <Compile Include="Assets\Referencer.cs" />
+     <Compile Include="Assets\RegisterButtonScript.cs" />
      <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\DemoSceneSwitcher.cs" />
      <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ExampleCharacterSelector.cs" />
      <Compile Include="Assets\SwipeMenu\Scripts\Demo Scripts\ExampleMenuAudioPlayer.cs" />
@@ -98,7 +188,9 @@
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\EntityEventInfo.cs" />
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\EventInfo.cs" />
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\EventSystem.cs" />
+     <Compile Include="Assets\TEXTBASEDRPG\EventSystem\GameStartEventInfo.cs" />
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\LocationEventInfo.cs" />
+     <Compile Include="Assets\TEXTBASEDRPG\EventSystem\LoginEventInfo.cs" />
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\MasterEventInfo.cs" />
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\NamableEventInfo.cs" />
      <Compile Include="Assets\TEXTBASEDRPG\EventSystem\NameableSystem.cs" />
@@ -123,7 +215,11 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Lean\Common\Examples\Fonts\OFL.txt" />
+     <None Include="Assets\Lean\Common\Examples\Shaders\Object.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Lean\Common\Examples\Shaders\Skybox.shader" />
+     <None Include="Assets\Lean\READ ME.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -134,71 +230,73 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Lean\Common\Examples\Shaders\Alpha.shader" />
      <None Include="Assets\SwipeMenu\Documentation\Version History.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\ColorfulButtons\Credits.txt" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -371,17 +469,20 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ </Reference>
  <Reference Include="RestSharp">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Assets/Plugins/RestSharp.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Assets/Plugins/RestSharp.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/Khejanin/Documents/INPROMOBILE/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>D:/School/INPRO/Mobile_Game/INPRO/INPRO Mobile Game/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -740,15 +841,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{868F7BB6-2B75-2C99-C6AA-1250865DCD59}</Project>
+      <Project>{C7DFCE02-3A4D-AD46-8827-9591F394B400}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="TextJuicer.csproj">
-      <Project>{9F093B07-588F-6C42-5BB2-B49243829496}</Project>
+      <Project>{10AB2104-7D4F-8B4B-C972-E332DEC4925B}</Project>
       <Name>TextJuicer</Name>
     </ProjectReference>
     <ProjectReference Include="TextJuicer-Editor.csproj">
-      <Project>{A8D8CD72-124B-0495-FE09-2D3DB5D9B75D}</Project>
+      <Project>{21F03DB9-8128-BA50-2FD1-D54FB3BE1C46}</Project>
       <Name>TextJuicer-Editor</Name>
     </ProjectReference>
   </ItemGroup>

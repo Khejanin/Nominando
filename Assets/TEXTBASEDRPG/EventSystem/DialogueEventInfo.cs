@@ -9,23 +9,24 @@ namespace EventSystem
 
         public DIALOGUE_EVENT_TYPE eventType;
         public DialogueNode node;
+        public bool juicy = false;
 
         public bool enableCustomOption = false;
 
-        public DialogueEventInfo(Dialogue dialogue, DialogueNode node, DIALOGUE_EVENT_TYPE eventType)
+       /* public DialogueEventInfo(Dialogue dialogue, DialogueNode node, DIALOGUE_EVENT_TYPE eventType)
         {
             this.dialogue = dialogue;
             this.node = node;
             this.eventType = eventType;
             EventInfoString = "Dialogue Event Fired";
-        }
+        }*/
 
-        public void Validate()
+       public void Validate()
         {
-            OnValidate();
+            SetDefaultButtonStrings();
         }
 
-        private void OnValidate()
+        public void SetDefaultButtonStrings()
         {
             if (!enableCustomOption)
             {

@@ -1,6 +1,5 @@
 ﻿using System;
 using EventSystem;
-using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue/Dialogue")]
@@ -14,6 +13,8 @@ public class Dialogue : ScriptableObject
     [HideInInspector]
     public Namable.Namable namable;
 
+    public bool juicy = false;
+
     [HideInInspector]
     public DialogueType dialogueType = DialogueType.NORMAL_DIALOGUE;
 
@@ -24,6 +25,17 @@ public class Dialogue : ScriptableObject
         IMAGE_DIALOGUE
     }
 
+    public void ClearAllInsertTexts()
+    {
+        DialogueNode node = first;
+        while (node != null)
+        {
+            if(node.canClear)
+                node.insertText = "";
+            node = node.next;
+        }
+    }
+    
     private void Awake()
     {
         Reset();
@@ -43,8 +55,12 @@ public class Dialogue : ScriptableObject
     {
         if (current != null)
         {
+            if (current.nameFromNamable)
+            {
+                return current.dialogueText.Replace("_NAME_", "<color=#0FF>" + current.nameFrom.name + "</color>");
+            }
             if (!current.insertText.Equals(""))
-                return current.dialogueText.Replace("_NAME_", current.insertText);
+                return current.dialogueText.Replace("_NAME_", "<color=#0FF>"+current.insertText+"</color>");
             return current.dialogueText;
         }
         else
@@ -59,7 +75,7 @@ public class Dialogue : ScriptableObject
         {
             if (next != null)
             {
-                if(next != null)
+                if(next != null && next.insertText == "" && current.insertText != "")
                     next.insertText = current.insertText;
                 current = next;
             }
@@ -70,12 +86,14 @@ public class Dialogue : ScriptableObject
         }
         else if (current != null)
         {
-            if(current.next != null)
+            if(current.holdsEvent && current.info) EventSystem.EventSystem.FireEvent(current.GetEvent());
+            if(current.next != null && current.next.insertText == "" && current.insertText != "")
                 current.next.insertText = current.insertText;
             current = current.next;
         }
         if (current == null)
         {
+            ClearAllInsertTexts();
             if (dialogueType == DialogueType.NAMABLE_DIALOGUE)
             {
                 StopDialogueEvent();
@@ -98,7 +116,6 @@ public class Dialogue : ScriptableObject
                 
                 var entityEvent =  CreateInstance<EntityEventInfo>();
                 entityEvent.entityEventType = ENTITY_EVENT_TYPE.ENTITY_STOP;
-                
                 EventSystem.EventSystem.FireEvent(entityEvent);
 
                 var locationEvent = CreateInstance<LocationEventInfo>();
@@ -116,7 +133,7 @@ public class Dialogue : ScriptableObject
         var dialogueEvent = CreateInstance<DialogueEventInfo>();
         dialogueEvent.dialogue = this;
         dialogueEvent.eventType = DIALOGUE_EVENT_TYPE.EndDialogue;
-               
+
         EventSystem.EventSystem.FireEvent(dialogueEvent);
     }
 }

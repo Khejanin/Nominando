@@ -9,21 +9,21 @@ using UnityEngine.UI;
 
 public static class NameableSystem
 {
-    private static readonly GameObject _cameraPanel;
-    private static readonly GameObject _nameableInput;
-    private static readonly TMP_InputField _inputField;
-    private static readonly Button _inputSubmitButton;
-    private static readonly CameraController _cameraController;
+    private static GameObject _cameraPanel;
+    private static GameObject _nameableInput;
+    private static TMP_InputField _inputField;
+    private static Button _inputSubmitButton;
+    private static CameraController _cameraController;
     private static NamableEventInfo _eventInfo;
     
     private static GameObject _locationPanel;
-    
-    static NameableSystem()
+
+    public static void SetElements(GameObject locationPanel, GameObject cameraPanel, GameObject nameableInput)
     {
-        _locationPanel = GameObject.Find("LocationPanel");
-        _cameraPanel = GameObject.Find("CameraPanel");
+        _locationPanel = locationPanel;
+        _cameraPanel = cameraPanel;
+        _nameableInput = nameableInput;
         _cameraController = _cameraPanel.GetComponent<CameraController>();
-        _nameableInput = GameObject.Find("NameableInput");
         _inputField = _nameableInput.GetComponentInChildren<TMP_InputField>();
         _inputSubmitButton = _nameableInput.GetComponentInChildren<Button>();
         _inputSubmitButton.onClick.AddListener(SubmitEvent);
@@ -31,10 +31,6 @@ public static class NameableSystem
         _nameableInput.SetActive(false);
         UIHelperClass.ShowPanel(_cameraPanel,true);
         UIHelperClass.ShowPanel(_nameableInput,true);
-        //_inputField.onSubmit.AddListener(SubmitEvent);
-        //_inputField.onDeselect.AddListener(SubmitEvent);
-        //_inputField.onEndEdit.AddListener(SubmitEvent);
-        //EventSystem.EventSystem.RegisterListener<MasterEventInfo>(MasterEvent);
         EventSystem.EventSystem.RegisterListener<NamableEventInfo>(NameableEvent);
     }
 
@@ -49,11 +45,6 @@ public static class NameableSystem
             else LocationEvent(me.locationEventInfo);
         }
     }*/
-
-    public static void Start()
-    {
-    }
-
     private static void NameableEvent(NamableEventInfo nameableEventInfo)
     {
         switch (nameableEventInfo.eventState)
@@ -95,6 +86,7 @@ public static class NameableSystem
         if (_inputField.text != "")
         {
             _eventInfo.namable.namableState = Namable.Namable.NAMABLE_STATE.NAMED;
+            SendAPIUploadRequest();
             _eventInfo.namable.name = _inputField.text;
             EventSystem.EventSystem.FireEvent(_eventInfo.namable.GetEvent());
             _nameableInput.SetActive(false);
@@ -102,10 +94,33 @@ public static class NameableSystem
         }
     }
 
-    private static void CameraResult(Sprite sprite)
+    private static void SendAPIUploadRequest()
     {
-        _eventInfo.namable.SetImage(sprite);
+        APIHandler.EntityUploadJSON uploadData = new APIHandler.EntityUploadJSON();
+        uploadData.isNamable = (_eventInfo.namable.GetType() != typeof(Location));
+        if (!uploadData.isNamable)
+        {
+            uploadData.HideActionNr = (_eventInfo.namable as Location).hideActionsNr;
+            uploadData.HideEntityNr = (_eventInfo.namable as Location).hideEntitiesNr;
+            uploadData.HideLocationNr = (_eventInfo.namable as Location).hideLocationsNr;
+        }
+        uploadData.Name = _inputField.text;
+        uploadData.UniqueId = _eventInfo.namable.uniqueID;
+        uploadData.State = _eventInfo.namable.namableState.ToString();
+        APIHandler.getAPIHandler().UploadEntityData(uploadData);
+    }
+
+    private static void CameraResult(Texture2D tex)
+    {
+        _eventInfo.namable.SetTexture(tex);
+        SendAPIUploadImageRequest(_eventInfo.namable,tex);
+        _eventInfo.namable.namableState = Namable.Namable.NAMABLE_STATE.COMPLETE;
+        SendAPIUploadRequest();
         EventSystem.EventSystem.FireEvent(_eventInfo.namable.GetEvent());
-        //_locationPanel.GetComponent<Image>().sprite = sprite;
+    }
+
+    private static void SendAPIUploadImageRequest(Namable.Namable nam,Texture2D tex)
+    {
+        APIHandler.getAPIHandler().UploadEntityImage(nam, tex);
     }
 }

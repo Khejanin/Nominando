@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b54a3d5a91fcfb4ebebda16df58b72f, type: 3}
+  m_Name: P1_SolwaVillageNameNode4
+  m_EditorClassIdentifier: 
+  dialogueText: Most houses are made out of red bricks, but there are some clay houses
+    too.
+  insertText: 
+  next: {fileID: 11400000, guid: adec35631c5535044a369b3bdf6e06d3, type: 2}
+  holdsEvent: 0
+  info: {fileID: 0}

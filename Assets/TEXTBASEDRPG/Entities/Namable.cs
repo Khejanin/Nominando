@@ -11,18 +11,20 @@ namespace Namable
     {
         public string uniqueID;
         public new string name;
-        public Sprite image;
+        public Texture2D Texture;
+        public string imagePath;
         public Dialogue namableDialogue;
         public Dialogue imageDialogue;
 
-        [HideInInspector]
-        public int imageHeight;
-        [HideInInspector]
-        public int imageWidth;
-        [NotNull] public ImageCropper.Settings imageSettings;
+        public bool juicy = false;
+
+        [HideInInspector] public int imageHeight = 256;
+        [HideInInspector] public int imageWidth = 256;
         public static string saveLocationPath = "Assets/Resources/img/";
 
         public NAMABLE_STATE namableState = NAMABLE_STATE.INITIAL;
+
+        public bool canBeReset = true;
 
         public enum NAMABLE_STATE
         {
@@ -33,23 +35,29 @@ namespace Namable
             COMPLETE
         }
 
-        public void InitImageSettings(int imageWidth,int imageHeight)
+        public ImageCropper.Settings GetImageSettings()
         {
-            imageSettings = new ImageCropper.Settings();
-            this.imageWidth = imageWidth;
-            this.imageHeight = imageHeight;
-            imageSettings.selectionMinAspectRatio = imageSettings.selectionMaxAspectRatio = (float)imageWidth / imageHeight;
+            ImageCropper.Settings result = new ImageCropper.Settings();
+            result.markTextureNonReadable = false;
+            result.selectionMinAspectRatio = result.selectionMaxAspectRatio = (float)imageWidth / imageHeight;
+            return result;
+        }
+        
+        public void Clear()
+        {
+            name = "";
+            namableState = NAMABLE_STATE.INITIAL;
+            imagePath = "";
         }
 
         private void OnEnable()
         {
-            InitImageSettings(256,256);
         }
 
-        public void SetImage(Sprite sprite)
+        public void SetTexture(Texture2D texture)
         {
-            image = sprite;
-            if (!name.Equals("") && image != null)
+            this.Texture = texture;
+            if (!name.Equals("") && Texture != null)
             {
                 namableState = NAMABLE_STATE.COMPLETE;
             }
@@ -58,7 +66,7 @@ namespace Namable
         public void SetName(string nam)
         {
             name = nam;
-            if (!name.Equals("") && image != null)
+            if (!name.Equals("") && Texture != null)
             {
                 namableState = NAMABLE_STATE.COMPLETE;
                 string json = JsonUtility.ToJson(this ,true);
@@ -71,10 +79,7 @@ namespace Namable
             throw new System.NotImplementedException();
         }
 
-        public virtual void LoadData()
-        {
-            
-        }
+        public abstract APIHandler.EntityUploadJSON getUploadData();
 
         public virtual void SetData(string nameData, NAMABLE_STATE stateData)
         {

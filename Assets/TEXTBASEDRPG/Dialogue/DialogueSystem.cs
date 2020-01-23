@@ -33,11 +33,12 @@ public static class DialogueSystem
 
     private static void DialogueEvent(DialogueEventInfo e)
     {
-        Debug.Log(e);
         switch (e.eventType)
         {
             case DIALOGUE_EVENT_TYPE.StartDialogue:
+                e.dialogue.current = e.dialogue.first;
                 UIHelperClass.ShowPanel(_dialoguePanel, true);
+                _textJuicer.enabled = e.juicy;
                 SetCurrentDialogue(e.dialogue);
                 break;
             case DIALOGUE_EVENT_TYPE.ContinueDialogue:
@@ -45,6 +46,7 @@ public static class DialogueSystem
                 break;
             case DIALOGUE_EVENT_TYPE.EndDialogue:
                 UIHelperClass.ShowPanel(_dialoguePanel, false);
+                _textJuicer.enabled = false;
                 break;
         }
     }
@@ -69,12 +71,7 @@ public static class DialogueSystem
         _defaultContinueEventInfo.eventType = DIALOGUE_EVENT_TYPE.ContinueDialogue;
         _defaultContinueEventInfo.Validate();
     }
-
-    public static Dialogue GetCurrentDialogue()
-    {
-        return _currentDialogue;
-    }
-
+    
     private static void SetOptions(EventInfo[] options)
     {
         for (int i = 0; i < 4-options.Length; i++)
@@ -124,7 +121,7 @@ public static class DialogueSystem
         if (_currentDialogue.current is DialogueNodeSplit)
         {
             var split = (DialogueNodeSplit) _currentDialogue.current;
-            SetOptions(split.options.ToArray());
+            SetOptions(split.getOptions().ToArray());
         }
         else
         {

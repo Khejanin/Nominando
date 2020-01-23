@@ -8,6 +8,8 @@ public static class EntitySystem
     private static readonly GameObject entityImageObject;
     private static readonly Image entityImage;
 
+    private static Namable.Namable currentEntity;
+
     private static readonly ButtonEventHandler[] _buttonEventHandlers = new ButtonEventHandler[4];
 
     static EntitySystem()
@@ -63,10 +65,33 @@ public static class EntitySystem
 
     private static void ShowEntity(EntityEventInfo entityEventInfo)
     {
-        entityImage.sprite = entityEventInfo.entity.image;
-        UIHelperClass.ShowPanel(entityImageObject, true);
+        LocationSystem.HideNamePanel();
+        if (entityEventInfo.entity.Texture == null)
+        {
+            currentEntity = entityEventInfo.entity;
+            APIHandler.getAPIHandler().FetchImage(entityEventInfo.entity.imagePath, FetchImageCallback);
+        }
+        else
+        {
+            entityImage.sprite = Sprite.Create(
+                entityEventInfo.entity.Texture, 
+                new Rect(0,0,entityEventInfo.entity.Texture.width, entityEventInfo.entity.Texture.height),
+                new Vector2(0.5f, 0.5f));
+            
+            entityImage.SetMaterialDirty();
+            UIHelperClass.ShowPanel(entityImageObject, true);
+        }
     }
 
+    public static void FetchImageCallback(Texture2D texture)
+    {
+        currentEntity.Texture = texture;
+        Sprite tempSpr = Sprite.Create(texture, new Rect(0,0,texture.width, texture.height),new Vector2(0.5f, 0.5f));
+        entityImage.sprite = tempSpr;
+        entityImage.SetMaterialDirty();
+        UIHelperClass.ShowPanel(entityImageObject, true);
+    }
+    
     private static void AssignButtons(EntityEventInfo entityEventInfo)
     {
         _buttonEventHandlers[0].SetText("Talk To");

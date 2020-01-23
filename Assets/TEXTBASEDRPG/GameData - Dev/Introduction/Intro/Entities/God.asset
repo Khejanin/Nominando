@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054fdc7ad1bc79f4d93ad793c55e2b37, type: 3}
+  m_Name: God
+  m_EditorClassIdentifier: 
+  uniqueID: GOD
+  name: 
+  Texture: {fileID: 0}
+  imagePath: 
+  namableDialogue: {fileID: 11400000, guid: 2ab6515d971415140af04f7828aaa0df, type: 2}
+  imageDialogue: {fileID: 11400000, guid: 41efb436c2d961f4b84f23716bf34dbe, type: 2}
+  imageHeight: 455
+  imageWidth: 256
+  namableState: 0
+  dialogue: {fileID: 0}
+  hp: 999
+  inventory: {fileID: 0}
+  stats:
+    Arcana: 0
+    Endurance: 0
+    Intelligence: 0
+    Speed: 0
+    Strength: 0
+  dialogueEventInfo: {fileID: 11400000, guid: 77df79c4937947946afe59312c2615cf, type: 2}
+  greeting: {fileID: 0}

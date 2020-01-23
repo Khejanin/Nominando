@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
         ShowPanel(true);
     }
 
-    public delegate void CameraResult(Sprite sprite);
+    public delegate void CameraResult(Texture2D tex);
     
     // Update is called once per frame
     private void Update()
@@ -40,7 +40,7 @@ public class CameraController : MonoBehaviour
              Input.GetTouch(0).phase == TouchPhase.Began))
         {
             var texture = _cameraPanel.GetComponent<Image>().material.mainTexture as WebCamTexture;
-            var settings = _eventInfo.namable.imageSettings;
+            var settings = _eventInfo.namable.GetImageSettings();
             var texture2D = new Texture2D(texture.width, texture.height);
 
             texture2D.SetPixels(texture.GetPixels());
@@ -56,11 +56,7 @@ public class CameraController : MonoBehaviour
     {
         if (result)
         {
-            Debug.Log(croppedImage.width);
-            Debug.Log(croppedImage.height);
-            Sprite sprite = Sprite.Create(croppedImage,
-                new Rect(0, 0, croppedImage.width, croppedImage.height), new Vector2(0.5f, 0.5f));
-            _callbackCameraResult.Invoke(sprite);
+            _callbackCameraResult.Invoke(croppedImage);
         }
         else
         {
@@ -72,6 +68,8 @@ public class CameraController : MonoBehaviour
     {
         width = _eventInfo.namable.imageWidth;
         height = _eventInfo.namable.imageHeight;
+        if (width == 0) width = 256;
+        if (height == 0) height = 512;
     }
 
     private void ShowPanel(bool show)

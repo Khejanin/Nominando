@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using EventSystem;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,18 @@ public static class LocationSystem
     //private static LocationSystem _locationSystem;
     private static readonly GameObject locationPanel;
     private static readonly Image locationPanelImage;
+    private static readonly GameObject LocationNamePanel;
+    private static readonly TextMeshProUGUI locationName;
+
+    private static LocationEventInfo currentLocationEventInfo;
 
     private static readonly ButtonEventHandler[] _buttonEventHandlers = new ButtonEventHandler[4];
 
     static LocationSystem()
     {
         locationPanel = GameObject.Find("LocationPanel");
+        LocationNamePanel = GameObject.Find("LocationNamePanel");
+        locationName = GameObject.Find("LocationName").GetComponentInChildren<TextMeshProUGUI>();
         locationPanelImage = locationPanel.GetComponent<Image>();
         EventSystem.EventSystem.RegisterListener<MasterEventInfo>(MasterEvent);
         EventSystem.EventSystem.RegisterListener<LocationEventInfo>(LocationEvent);
@@ -45,13 +52,13 @@ public static class LocationSystem
             if (me.dialogueEventInfo != null)
                 if (me.dialogueEventInfo.eventType != DIALOGUE_EVENT_TYPE.EndDialogue)
                 {
-                    ShowImage(me.locationEventInfo);
+                    Show(me.locationEventInfo);
                     return;
                 }
             if(me.entityEventInfo != null)
                 if (me.entityEventInfo.entityEventType != ENTITY_EVENT_TYPE.ENTITY_STOP)
                 {
-                    ShowImage(me.locationEventInfo);
+                    Show(me.locationEventInfo);
                     return;
                 }
 
@@ -64,15 +71,43 @@ public static class LocationSystem
     private static void LocationEvent(LocationEventInfo locationEventInfo)
     {
         Game.currentLocation = locationEventInfo.location;
-        ShowImage(locationEventInfo);
+        Show(locationEventInfo);
         AssignButtons(locationEventInfo);
     }
 
-    private static void ShowImage(LocationEventInfo locationEventInfo)
+    private static void Show(LocationEventInfo locationEventInfo)
     {
-        locationPanelImage.sprite = locationEventInfo.location.image;
+        locationName.text = locationEventInfo.location.name;
+        UIHelperClass.ShowPanel(LocationNamePanel,true);
+        if (locationEventInfo.location.Texture == null)
+        {
+            currentLocationEventInfo = locationEventInfo;
+            APIHandler.getAPIHandler().FetchImage(locationEventInfo.location.imagePath, FetchImageCallback);
+        }
+        else
+        {
+            locationPanelImage.sprite = Sprite.Create(
+                locationEventInfo.location.Texture, 
+                new Rect(0,0,locationEventInfo.location.Texture.width, locationEventInfo.location.Texture.height),
+                new Vector2(0.5f, 0.5f));
+            
+            locationPanelImage.SetMaterialDirty();
+        }
     }
 
+    public static void HideNamePanel()
+    {
+        UIHelperClass.ShowPanel(LocationNamePanel,false);
+    }
+
+    public static void FetchImageCallback(Texture2D texture)
+    {
+        currentLocationEventInfo.location.Texture = texture;
+        Sprite tempSpr = Sprite.Create(texture, new Rect(0,0,texture.width, texture.height),new Vector2(0.5f, 0.5f));
+        locationPanelImage.sprite = tempSpr;
+        locationPanelImage.SetMaterialDirty();
+    }
+    
     private static void AssignButtons(LocationEventInfo locationEventInfo)
     {
         locationEventInfo.location.EvaluateEventHolders();

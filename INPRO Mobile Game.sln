@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{C7DFCE02-3A4D-AD46-8827-9591F394B400}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextJuicer", "TextJuicer.csproj", "{10AB2104-7D4F-8B4B-C972-E332DEC4925B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextJuicer-Editor", "TextJuicer-Editor.csproj", "{21F03DB9-8128-BA50-2FD1-D54FB3BE1C46}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{38F1258F-BC4D-2B9B-1FC7-733CDD52CB86}"
 EndProject
 Global
@@ -21,6 +25,14 @@ Global
 		{C7DFCE02-3A4D-AD46-8827-9591F394B400}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7DFCE02-3A4D-AD46-8827-9591F394B400}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7DFCE02-3A4D-AD46-8827-9591F394B400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AB2104-7D4F-8B4B-C972-E332DEC4925B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AB2104-7D4F-8B4B-C972-E332DEC4925B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AB2104-7D4F-8B4B-C972-E332DEC4925B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AB2104-7D4F-8B4B-C972-E332DEC4925B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F03DB9-8128-BA50-2FD1-D54FB3BE1C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F03DB9-8128-BA50-2FD1-D54FB3BE1C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F03DB9-8128-BA50-2FD1-D54FB3BE1C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F03DB9-8128-BA50-2FD1-D54FB3BE1C46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38F1258F-BC4D-2B9B-1FC7-733CDD52CB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38F1258F-BC4D-2B9B-1FC7-733CDD52CB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38F1258F-BC4D-2B9B-1FC7-733CDD52CB86}.Release|Any CPU.ActiveCfg = Release|Any CPU

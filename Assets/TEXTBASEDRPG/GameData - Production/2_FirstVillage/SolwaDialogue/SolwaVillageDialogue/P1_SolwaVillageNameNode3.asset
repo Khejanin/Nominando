@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b54a3d5a91fcfb4ebebda16df58b72f, type: 3}
+  m_Name: P1_SolwaVillageNameNode3
+  m_EditorClassIdentifier: 
+  dialogueText: Now you're right in front of the entrance to the village, it doesn't
+    have any walls and doesn't look very well protected.
+  insertText: 
+  next: {fileID: 11400000, guid: ab8fa7cc42a45ea4496c112182c7761c, type: 2}
+  holdsEvent: 0
+  info: {fileID: 0}

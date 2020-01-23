@@ -19,7 +19,7 @@ public static class ProgressSystem
 
     private static void MasterEvent(MasterEventInfo me)
     {
-        if(me.progressEventInfo != null) ProgressEvent(me.progressEventInfo);
+        if (me.progressEventInfo != null) ProgressEvent(me.progressEventInfo);
     }
 
     private static void ProgressEvent(ProgressEventInfo progressEventInfo)
@@ -27,29 +27,48 @@ public static class ProgressSystem
         if (!progressEventInfo.done)
         {
             progressEventInfo.done = true;
-            if (progressEventInfo.progressEventType == PROGRESS_EVENT_TYPE.ADD_TO_LOCATION)
+            switch (progressEventInfo.progressEventType)
             {
-                if (progressEventInfo.eventHolderToAddOrRemove != null)
-                    if(progressEventInfo.eventHolderToAddOrRemove.GetType() == typeof(Entity))
-                        progressEventInfo.location.entities.Add(progressEventInfo.eventHolderToAddOrRemove as Entity);
-                    else if(progressEventInfo.eventHolderToAddOrRemove.GetType() == typeof(Location))
-                        progressEventInfo.location.locations.Add(progressEventInfo.eventHolderToAddOrRemove as Location);
-                    else if(progressEventInfo.eventHolderToAddOrRemove.GetType() == typeof(Action))
-                        progressEventInfo.location.actions.Add(progressEventInfo.eventHolderToAddOrRemove as Action);
-                EventSystem.EventSystem.FireEvent(progressEventInfo.location.GetEvent());
-            }
-            else if(progressEventInfo.progressEventType == PROGRESS_EVENT_TYPE.REMOVE_FROM_LOCATION)
-            {
-                if (progressEventInfo.eventHolderToAddOrRemove != null)
-                    if(progressEventInfo.eventHolderToAddOrRemove.GetType() == typeof(Entity))
-                        progressEventInfo.location.entities.Remove(progressEventInfo.eventHolderToAddOrRemove as Entity);
-                    else if(progressEventInfo.eventHolderToAddOrRemove.GetType() == typeof(Location))
-                        progressEventInfo.location.locations.Remove(progressEventInfo.eventHolderToAddOrRemove as Location);
-                    else if(progressEventInfo.eventHolderToAddOrRemove.GetType() == typeof(Action))
-                        progressEventInfo.location.actions.Remove(progressEventInfo.eventHolderToAddOrRemove as Action);
+                case PROGRESS_EVENT_TYPE.ADD_TO_LOCATION:
+                    switch (progressEventInfo.AddRemoveType)
+                    {
+                        case ADD_REMOVE_TYPE.ACTION:
+                            progressEventInfo.location.hideActionsNr--;
+                            break;
+                        case ADD_REMOVE_TYPE.ENTITY:
+                            progressEventInfo.location.hideEntitiesNr--;
+                            break;
+                        case ADD_REMOVE_TYPE.LOCATION:
+                            progressEventInfo.location.hideLocationsNr--;
+                            break;
+                    }
+                    APIHandler.getAPIHandler().UploadEntityData(progressEventInfo.location.getUploadData());
+                    break;
+                case PROGRESS_EVENT_TYPE.REMOVE_FROM_LOCATION:
+                    switch (progressEventInfo.AddRemoveType)
+                    {
+                        case ADD_REMOVE_TYPE.ACTION:
+                            progressEventInfo.location.hideActionsNr++;
+                            break;
+                        case ADD_REMOVE_TYPE.ENTITY:
+                            progressEventInfo.location.hideEntitiesNr++;
+                            break;
+                        case ADD_REMOVE_TYPE.LOCATION:
+                            progressEventInfo.location.hideLocationsNr++;
+                            break;
+                    }
+                    APIHandler.getAPIHandler().UploadEntityData(progressEventInfo.location.getUploadData());
+                    break;
+                case PROGRESS_EVENT_TYPE.ADD_TO_INVENTORY:
+                    break;
+                case PROGRESS_EVENT_TYPE.PROGRESS_DIALOGUE:
+                    progressEventInfo.entity.dialogueState++;
+                    APIHandler.getAPIHandler().UploadEntityData(progressEventInfo.entity.getUploadData());
+                    break;
+                case PROGRESS_EVENT_TYPE.PROGRESS_OPTIONS:
+                    progressEventInfo.options.hideOptions--;
+                    break;
             }
         }
     }
-
-  
 }

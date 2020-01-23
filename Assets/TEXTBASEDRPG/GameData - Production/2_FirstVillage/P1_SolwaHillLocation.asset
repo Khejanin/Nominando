@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7974d3eeeac94d8a9674f6245f42b1e6, type: 3}
+  m_Name: P1_SolwaHillLocation
+  m_EditorClassIdentifier: 
+  uniqueID: SOLWA_HILL
+  name: Hill
+  Texture: {fileID: 0}
+  imagePath: file upload successful
+  namableDialogue: {fileID: 11400000, guid: f70de4a145a818a4ba1db18e1920f13d, type: 2}
+  imageDialogue: {fileID: 11400000, guid: f7a9bbf8e5ed979449d652fb93948ff0, type: 2}
+  juicy: 0
+  imageHeight: 1080
+  imageWidth: 1920
+  namableState: 4
+  canBeReset: 1
+  entities: []
+  locations:
+  - {fileID: 11400000, guid: ecebcc8e56d92634d970fa243d3d682a, type: 2}
+  actions:
+  - {fileID: 11400000, guid: 60064d50eaca2db4ca79771d21247210, type: 2}
+  hideEntitiesNr: 0
+  hideLocationsNr: 0
+  hideActionsNr: 1

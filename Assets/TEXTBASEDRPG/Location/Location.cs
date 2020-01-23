@@ -16,18 +16,8 @@ namespace Namable
 
         public int hideEntitiesNr, hideLocationsNr, hideActionsNr;
 
-        private static string path = "/img/";
-        
         public override EventInfo GetEvent()
         {
-            /*var info = CreateInstance<LocationEventInfo>();
-            info.location = this;
-            evaluateEventHolders();
-            info.buttonOptionString = name;
-            return info;*/
-            /*if (namableState == NAMABLE_STATE.NAMED && imageDialogue == null){
-                namableState = NAMABLE_STATE.IMAGE_DIALOGUE_FINISH;
-            }*/
             switch (namableState)
             {
                 case NAMABLE_STATE.COMPLETE:
@@ -46,7 +36,7 @@ namespace Namable
                     var namedInfo = CreateInstance<DialogueEventInfo>();
                     namedInfo.dialogue = imageDialogue;
                     namedInfo.dialogue.namable = this;
-                    namedInfo.dialogue.current.insertText = name;
+                    namedInfo.dialogue.first.insertText = name;
                     namedInfo.dialogue.dialogueType = Dialogue.DialogueType.IMAGE_DIALOGUE;
                     return namedInfo;
                 case NAMABLE_STATE.NAMABLE_DIALOGUE_FINISH:
@@ -63,6 +53,19 @@ namespace Namable
                     initialInfo.buttonOptionString = "???";
                     return initialInfo;
             }
+        }
+
+        public override APIHandler.EntityUploadJSON getUploadData()
+        {
+            APIHandler.EntityUploadJSON upload = new APIHandler.EntityUploadJSON();
+            upload.isNamable = false;
+            upload.Name = name;
+            upload.State = namableState.ToString();
+            upload.UniqueId = uniqueID;
+            upload.HideActionNr = hideActionsNr;
+            upload.HideEntityNr = hideEntitiesNr;
+            upload.HideLocationNr = hideLocationsNr;
+            return upload;
         }
 
         public void EvaluateEventHolders()
@@ -95,18 +98,9 @@ namespace Namable
         private void OnEnable()
         {
             EvaluateEventHolders();
-            InitImageSettings(1920,1080);
+            imageWidth = 1920;
+            imageHeight = 1080;
         }
 
-        public void loadData()
-        {
-            Resources.Load(path);    
-        }
-        
-        public void saveData()
-        {
-            
-        }
-        
     }
 }

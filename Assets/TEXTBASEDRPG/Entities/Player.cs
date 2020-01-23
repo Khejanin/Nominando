@@ -27,4 +27,9 @@ public class Player : Entity
     {
         throw new NotImplementedException();
     }
+
+    public override APIHandler.EntityUploadJSON getUploadData()
+    {
+        throw new NotImplementedException();
+    }
 }

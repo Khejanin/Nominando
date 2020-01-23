@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b54a3d5a91fcfb4ebebda16df58b72f, type: 3}
+  m_Name: P1_SolwaFarmerNode5
+  m_EditorClassIdentifier: 
+  dialogueText: So what are you doing here in _NAME_ ?
+  insertText: 
+  next: {fileID: 11400000, guid: 903429466ae92544587317f4b7901477, type: 2}
+  holdsEvent: 1
+  nameFrom: {fileID: 11400000, guid: ecebcc8e56d92634d970fa243d3d682a, type: 2}
+  nameFromNamable: 1
+  canClear: 1
+  info: {fileID: 11400000, guid: 00986fb43fdb0db428048d0e077aab6d, type: 2}

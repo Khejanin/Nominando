@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054fdc7ad1bc79f4d93ad793c55e2b37, type: 3}
+  m_Name: P_CreatorEntity
+  m_EditorClassIdentifier: 
+  uniqueID: CREATOR
+  name: The Nameless
+  Texture: {fileID: 2800000, guid: 6a81c903a94c1ac48978fc4e6234d7ae, type: 3}
+  imagePath: 
+  namableDialogue: {fileID: 0}
+  imageDialogue: {fileID: 0}
+  juicy: 1
+  imageHeight: 512
+  imageWidth: 256
+  namableState: 4
+  canBeReset: 0
+  dialogue: {fileID: 11400000, guid: 5713e740924a8e64e934faa60fba9348, type: 2}
+  dialogues:
+  - {fileID: 11400000, guid: 5713e740924a8e64e934faa60fba9348, type: 2}
+  hp: 999
+  inventory: {fileID: 0}
+  stats:
+    Arcana: 0
+    Endurance: 0
+    Intelligence: 0
+    Speed: 0
+    Strength: 0
+  dialogueState: 0
+  greeting: {fileID: 0}

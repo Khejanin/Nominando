@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Namable;
 using UnityEngine;
@@ -9,6 +10,8 @@ namespace EventSystem
     public class ProgressEventInfo : EventInfo
     {
         public Location location;
+        public Entity entity;
+        public DialogueNodeSplit options;
         public IEventHolder eventHolder;
 
         public IEventHolder eventHolderToAddOrRemove;
@@ -16,12 +19,32 @@ namespace EventSystem
         public bool done;
 
         public PROGRESS_EVENT_TYPE progressEventType;
+        public ADD_REMOVE_TYPE AddRemoveType;
+
+        private void Awake()
+        {
+            done = false;
+        }
+
+        private void OnValidate()
+        {
+            done = false;
+        }
     }
 
     public enum PROGRESS_EVENT_TYPE
     {
         ADD_TO_LOCATION,
         REMOVE_FROM_LOCATION,
-        ADD_TO_INVENTORY
+        ADD_TO_INVENTORY,
+        PROGRESS_DIALOGUE,
+        PROGRESS_OPTIONS
+    }
+
+    public enum ADD_REMOVE_TYPE
+    {
+        ENTITY,
+        ACTION,
+        LOCATION
     }
 }
