@@ -6,6 +6,6 @@ namespace EventSystem
 { 
     public class GameStartEventInfo : EventInfo
     {
-        public long progress;
+        public int progress;
     }
 }

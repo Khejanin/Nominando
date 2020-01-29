@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: INPRO Mobile Game
+  companyName: RedAxesStudio
+  productName: Nominando
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -39,7 +39,11 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: d4a1e6f112486734983443db58fdad44, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 22db0e8da1d32d94397bea9fe3b5f62e, type: 3}
+    duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -162,7 +166,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.HitlerProductions.AuschwitzSimulator
+    Android: m.RedAxesStudio.Nominando
     Standalone: unity.DefaultCompany.Potato Dungeon 2D
     Tizen: com.Company.ProductName
     iPhone: com.Company.ProductName
@@ -282,7 +286,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 05d9e03551dbb9c418569f89d9aa335e, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -819,7 +823,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: c4584a6f-28fd-4777-a26a-3af0f3f62d9b
+  cloudProjectId: 2e87b527-8343-4e46-9e85-969a17e58564
   framebufferDepthMemorylessMode: 0
   projectName: INPRO Mobile Game
   organizationId: mrtutealex

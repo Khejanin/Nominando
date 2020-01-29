@@ -16,8 +16,10 @@ MonoBehaviour:
     imagine the drastic consequences if something goes wrong!
   insertText: 
   next: {fileID: 11400000, guid: 7a30a5917a9186c42b3d71b54cf3075a, type: 2}
-  holdsEvent: 0
+  holdsEvent: 1
+  isGameMessage: 0
+  isSaved: 0
   nameFrom: {fileID: 0}
   nameFromNamable: 0
   canClear: 1
-  info: {fileID: 0}
+  info: {fileID: 11400000, guid: e4553ab6e8cba754a892b21c79a94869, type: 2}

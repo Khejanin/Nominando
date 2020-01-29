@@ -2,153 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f7ab7fd-81f4-4f6b-9946-b072db6eef95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.INPRO Mobile Game/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.INPRO Mobile Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.INPRO Mobile Game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.INPRO Mobile Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.INPRO Mobile Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DataLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DataLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/APIHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/APIHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ActionPanelScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ActionPanelScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonEventHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonEventHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClearAllDataButtonScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClearAllDataButtonScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameInitializer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameInitializer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HistoryTextScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HistoryTextScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LoginButtonScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LoginButtonScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyStuff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NotificationTextScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NotificationTextScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Referencer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Referencer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RegisterButtonScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RegisterButtonScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Consumable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Consumable.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/Dialogue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNodeSplit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNodeSplit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Entity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/EntitySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/EntitySystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/NPC.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Namable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Namable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/DialogueEventInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/DialogueEventInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/NameableSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/NameableSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/GameStartEventInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/GameStartEventInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/LoginEventInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/LoginEventInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressEventInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressEventInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Foo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Foo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GUILayout.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GUILayout.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/DialogueEndEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/DialogueEndEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/DialogueEndMasterEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/DialogueEndMasterEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/EntityEndEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/EntityEndEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericImageDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericImageDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericImageDialogueNode.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericImageDialogueNode.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericLocationImageDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericLocationImageDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericLocationImageDialogueNode.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericLocationImageDialogueNode.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericLocationImageDialogueNode_2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/GenericLocationImageDialogueNode_2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/IntroDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/IntroDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/IntroDialogueEndLocationEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/IntroDialogueEndLocationEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_1_Hello.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_1_Hello.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_2_You_Must.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_2_You_Must.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_3_Nevermind.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_3_Nevermind.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_4_This_World.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_4_This_World.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_5_Go_On.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_5_Go_On.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_6_EndDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Intro_6_EndDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable/GodNamableDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable/GodNamableDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable/GodNamableDialogueNode_1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable/GodNamableDialogueNode_1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable/GodNamableDialogueNode_2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Dialogue/Namable/GodNamableDialogueNode_2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities/God.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities/God.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities/HitlerLocation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities/HitlerLocation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities/Space.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Entities/Space.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_DE.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_DE.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_DE04_Borgar.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_DE04_Borgar.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_God_EE.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_God_EE.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_LE.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_LE.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_ME.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/Events/Intro_ME.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/milky-way-2695569_1920.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/Intro/milky-way-2695569_1920.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/IntroProgressEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/IntroProgressEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/NamableTest.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/NamableTest.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/Start_01_Here.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/Start_01_Here.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/Start_02_You_cant.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/Start_02_You_cant.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/Start_03_Just.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/Dialogue/Start_03_Just.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureDialogueEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureDialogueEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureLocation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureLocation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureLocationEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureLocationEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureMasterEvent.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/StartAdventureMasterEvent.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestAction.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestAction.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestDialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestDialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestDialogueNode.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestDialogueNode.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestDialogueSplit.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestDialogueSplit.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestProgress.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/TestProgress.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/testD.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Introduction/StartAdventure/testD.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/New LinearCluster.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/New LinearCluster.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData/Resources/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Dev/Resources/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorEntity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorEntity.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLInear6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLinear10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLinear10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLinear8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLinear8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLinear9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_Creator/P_CreatorLinear9.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_LimboLocation.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/1_Intro/P_LimboLocation.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaCityHall.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaCityHall.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaDogNPC.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaDogNPC.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaFarmerNPC.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaFarmerNPC.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaHillLocation.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaHillLocation.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaVillageLocation.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/P1_SolwaVillageLocation.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaActions/SolwaHill/P1_SolwaCatPickUpNode1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaActions/SolwaHill/P1_SolwaCatPickUpNode1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoice.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoice.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent1Node1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent1Node1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent2Node1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent2Node1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent3Node1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent3Node1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent3Node2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent3Node2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent4Node1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogBellChoiceEvent4Node1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogRingBellFierceProgressEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogRingBellFierceProgressEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogRingBellProgressEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogRingBellProgressEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogSmashBellProgressEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaDogDialogue/P1_SolwaDogSmashBellProgressEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaFarmerDialogue1/P1_SolwaFarmerDialogueEnd1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaFarmerDialogue1/P1_SolwaFarmerDialogueEnd1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaHillNameDialogue/P1_SolwaImageBranch1Option1Linear3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaHillNameDialogue/P1_SolwaImageBranch1Option1Linear3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaHillNameDialogue/P1_SolwaImageLinearEnd5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaDialogue/SolwaHillNameDialogue/P1_SolwaImageLinearEnd5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameData - Production/2_FirstVillage/SolwaEvents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Inventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Inventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Item.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/Location.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/LocationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/LocationSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INPRO Mobile Game.sln" beforeDir="false" afterPath="$PROJECT_DIR$/INPRO Mobile Game.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Skill.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Skill.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/TextManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/TextManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB-lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/04/04211869cba67b4337cb7cc98af39eba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1ae53528395b90f7a4e079a0b5d92f9d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/39/3913ab5a9b0f44134e1094495b2e2f04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3ae12a66d85e3e9ed6efee9e6018da2b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/44/44e075dccbb59cfa259d41130e095898" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/51/512f69d3639448e85cb5514f5642157d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5df6341e9c1b9bc7a34e19fbfbb79c6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/81/818b85864b9678edfbeca9fb45afb649" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8c/8c95e4186517b5fe027ef1e210f6b19b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a7/a7a5eaf230b4620411bfadb6078f2846" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/ab114ea9f3e2b062026b9f5f4ec83582" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c4/c4210111f1e92e98d9663bb744bb3b9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d0a6e6fb1f5210bce1375f5ffb5826ad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d5/d54d6714fb965141dc49dcaf81b73fef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/df/df38b3e9e4ccf22eefad0a195994ea3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3e2e71ce646ace8f85a976f937cab3a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fc/fc6295c294ca1725e57f85535be5b4e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/07/0780d2b7a664a7a4282f3685810b3ed9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/14/149b4af5028531855e359950b0fef279" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/61/615d32f5a3a016c88ef032cd9447fc79" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/70/70f9331a8b9eba56d67145df918951ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f58576f49a8f1de5530ea3aae7084c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/942518feb11bdb855b7d8ca20b4bae1a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/9434ed110888a9191f7abeac9c37dece" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a2/a240a68733c9970784adc211a8d2588a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b0/b0f3098005d88cfd06958e9ee61f9788" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/ccb539961a8da0f8ca2b573b24738a0d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Collab/CollabSnapshot_c4584a6f-28fd-4777-a26a-3af0f3f62d9b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Collab/CollabSnapshot_c4584a6f-28fd-4777-a26a-3af0f3f62d9b.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
@@ -158,31 +130,21 @@
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/68e6db2ebdc24f95958faec2be5558d6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/68e6db2ebdc24f95958faec2be5558d6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/79459efec17a4d00a321bdcc27bbc385" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/79459efec17a4d00a321bdcc27bbc385" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp-firstpass.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp-firstpass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp-firstpass.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/TextJuicer-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/TextJuicer-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/TextJuicer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/TextJuicer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/TextJuicer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/TextJuicer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Analytics.DataPrivacy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Analytics.DataPrivacy.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.TextMeshPro.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/Unity.Timeline.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.SpatialTracking.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.SpatialTracking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.SpatialTracking.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.XR.LegacyInputHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.XR.LegacyInputHelpers.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/com.unity.multiplayer-hlapi.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/com.unity.multiplayer-hlapi.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/com.unity.multiplayer-hlapi.Runtime.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/Managed/com.unity.multiplayer-hlapi.Runtime.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/c3ec8097647d9e54daa56be589f9a12b" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/c3ec8097647d9e54daa56be589f9a12b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/c41005c129ba4d66911b75229fd70b45" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/c41005c129ba4d66911b75229fd70b45" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/dd89cf5b9246416f84610a006f916af7" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/dd89cf5b9246416f84610a006f916af7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/e73a58f6e2794ae7b1b7e50b7fb811b0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/e73a58f6e2794ae7b1b7e50b7fb811b0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/f952c082cb03451daed3ee968ac6c63e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/f952c082cb03451daed3ee968ac6c63e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/globalgamemanagers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/globalgamemanagers.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/Data/level0" afterDir="false" />
@@ -190,75 +152,39 @@
       <change beforePath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-firstpass.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer-Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/TextJuicer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.SpatialTracking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.SpatialTracking.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.SpatialTracking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.SpatialTracking.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB-lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/92c5e6-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/92c5e6-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/7aebc0-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/7aebc0-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextJuicer-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TextJuicer-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextJuicer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TextJuicer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
@@ -281,7 +207,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Lean/GUI/Scripts/LeanSelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/Action.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/b7/65c0f07e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RegisterButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/NamableEventInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lean/GUI/Scripts/LeanSizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
@@ -303,21 +229,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/Location.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LoginButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/GameStartEventInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/GameInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D22F8E7-1133-418C-87C7-B26EA181F3E3/6e/d79f6078/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/LoginEventInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/98/a1ccc83f/NullReferenceException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/DialogueLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ClearAllDataButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DataLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ActionPanelScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ButtonEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NotificationTextScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/HistoryTextScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8FEE2FC0-89A3-4DB8-92F9-1E5FE3ABE5AD/61/88da6ef6/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D22F8E7-1133-418C-87C7-B26EA181F3E3/97/930769a1/AsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/EventSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextJuicer/Scripts/Runtime/TMP_TextJuicer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -328,7 +249,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Lean/GUI/Scripts/LeanDrag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lean/GUI/Scripts/LeanGui.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lean/GUI/LeanDragToTarget.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/APIHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/APIHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lean/GUI/Scripts/LeanMoveToTop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/ImageCropper/Scripts/ImageCropper.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -338,7 +259,6 @@
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/EventSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/MasterEventMono.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/OptionButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/ButtonEventHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/DialogueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/EventHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueOption.cs" />
@@ -361,28 +281,32 @@
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/EntitySystem.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/LoginEventInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/ClearAllDataButtonScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/DataLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Lean/GUI/LeanDragTo.cs" />
         <option value="$PROJECT_DIR$/Assets/Lean/GUI/LeanDragToTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Lean/GUI/Scripts/LeanDrag.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/LocationSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/HistoryTextScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/DialogueEventInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/Location.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Namable.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameInitializer.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressEventInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/Dialogue.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNodeSplit.cs" />
-        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Entity.cs" />
-        <option value="$PROJECT_DIR$/Assets/APIHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/DialogueNode.cs" />
         <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/NPC.cs" />
+        <option value="$PROJECT_DIR$/Assets/HistorySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Dialogue/Dialogue.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/EventSystem/ProgressEventInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInitializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/APIHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/LocationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LogoutButtonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/DataLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/ButtonEventHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Namable.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/APIHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Location/Location.cs" />
       </list>
     </option>
   </component>
@@ -431,10 +355,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="3340">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1964">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3340" />
+      <option name="pid" value="1964" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -463,7 +387,12 @@
       <workItem from="1579345045630" duration="19660000" />
       <workItem from="1579454433246" duration="6030000" />
       <workItem from="1579596223803" duration="853000" />
-      <workItem from="1579783620218" duration="7019000" />
+      <workItem from="1579783620218" duration="8896000" />
+      <workItem from="1579882041249" duration="6395000" />
+      <workItem from="1580113784278" duration="7247000" />
+      <workItem from="1580194274156" duration="1283000" />
+      <workItem from="1580229780854" duration="2116000" />
+      <workItem from="1580288449991" duration="3478000" />
     </task>
     <servers />
   </component>
@@ -500,19 +429,6 @@
           <line>51</line>
           <properties documentPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/DialogueSystem.cs" initialLine="51" />
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Entity.cs</url>
-          <line>68</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/TEXTBASEDRPG/Entities/Entity.cs" initialLine="50">
-            <startOffsets>
-              <option value="2144" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2179" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -61,6 +61,7 @@ namespace Namable
                 case NAMABLE_STATE.IMAGE_DIALOGUE_FINISH:
                     var imageFinishInfo = CreateInstance<NamableEventInfo>();
                     imageFinishInfo.namable = this;
+                    imageFinishInfo.buttonOptionString = "Give " + name + " a picture!";
                     imageFinishInfo.eventState = NAMABLE_EVENT_STATE.PICTURE_ONLY;
                     imageFinishInfo.buttonOptionString = name;
                     return imageFinishInfo;
@@ -68,6 +69,7 @@ namespace Namable
                     var namedInfo = CreateInstance<DialogueEventInfo>();
                     namedInfo.dialogue = imageDialogue;
                     namedInfo.dialogue.namable = this;
+                    namedInfo.buttonOptionString = name;
                     namedInfo.dialogue.first.insertText = name;
                     namedInfo.dialogue.first.canClear = false;
                     namedInfo.juicy = imageDialogue.juicy;

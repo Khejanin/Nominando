@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b54a3d5a91fcfb4ebebda16df58b72f, type: 3}
+  m_Name: P1_SolwaDogMayorChoice1Node6
+  m_EditorClassIdentifier: 
+  dialogueText: You suddenly notice a dog sitting on a pillow at the other end of
+    the room, with a tiny cup of tea in front of him atop a small table out of wood.
+  insertText: 
+  next: {fileID: 11400000, guid: a2739c73d06428f4f8f05d202568998d, type: 2}
+  holdsEvent: 0
+  isSaved: 0
+  nameFrom: {fileID: 0}
+  nameFromNamable: 0
+  canClear: 1
+  info: {fileID: 0}

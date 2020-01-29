@@ -15,3 +15,9 @@ MonoBehaviour:
   dialogueText: That is because I have a very important task for you!
   insertText: 
   next: {fileID: 11400000, guid: 5ae7561d39154cd4a819966caca222a8, type: 2}
+  holdsEvent: 0
+  isSaved: 0
+  nameFrom: {fileID: 0}
+  nameFromNamable: 0
+  canClear: 1
+  info: {fileID: 0}

@@ -14,7 +14,13 @@ namespace Namable
         public List<Location> locations = new List<Location>();
         public List<Action> actions = new List<Action>();
 
+        public int progressIndex;
+
         public int hideEntitiesNr, hideLocationsNr, hideActionsNr;
+
+        public bool clearsEverthing = true;
+        
+        public int normalHideEntitiesNr, normalHideLocationsNr, normalHideActionsNr;
 
         public override EventInfo GetEvent()
         {
@@ -29,13 +35,14 @@ namespace Namable
                 case NAMABLE_STATE.IMAGE_DIALOGUE_FINISH:
                     var imageFinishInfo = CreateInstance<NamableEventInfo>();
                     imageFinishInfo.namable = this;
+                    imageFinishInfo.buttonOptionString = "Give " + name + " a picture!";
                     imageFinishInfo.eventState = NAMABLE_EVENT_STATE.PICTURE_ONLY;
-                    imageFinishInfo.buttonOptionString = name;
                     return imageFinishInfo;
                 case NAMABLE_STATE.NAMED:
                     var namedInfo = CreateInstance<DialogueEventInfo>();
                     namedInfo.dialogue = imageDialogue;
                     namedInfo.dialogue.namable = this;
+                    namedInfo.buttonOptionString = name;
                     namedInfo.dialogue.first.insertText = name;
                     namedInfo.dialogue.dialogueType = Dialogue.DialogueType.IMAGE_DIALOGUE;
                     return namedInfo;
@@ -53,6 +60,15 @@ namespace Namable
                     initialInfo.buttonOptionString = "???";
                     return initialInfo;
             }
+        }
+
+        public override void Clear()
+        {
+            if(clearsEverthing)
+                base.Clear();
+            hideActionsNr = normalHideActionsNr;
+            hideLocationsNr = normalHideLocationsNr;
+            hideEntitiesNr = normalHideEntitiesNr;
         }
 
         public override APIHandler.EntityUploadJSON getUploadData()

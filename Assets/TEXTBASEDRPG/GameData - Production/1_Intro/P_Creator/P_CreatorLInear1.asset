@@ -15,3 +15,9 @@ MonoBehaviour:
   dialogueText: Oh! You're finally awake!
   insertText: 
   next: {fileID: 11400000, guid: 74bee2ff6b71fda40995df2b9dc45918, type: 2}
+  holdsEvent: 0
+  isSaved: 0
+  nameFrom: {fileID: 0}
+  nameFromNamable: 0
+  canClear: 1
+  info: {fileID: 0}

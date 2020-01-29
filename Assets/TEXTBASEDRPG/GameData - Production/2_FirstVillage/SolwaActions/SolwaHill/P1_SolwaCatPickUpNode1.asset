@@ -16,6 +16,8 @@ MonoBehaviour:
   insertText: 
   next: {fileID: 11400000, guid: a24e54c8b1008384ebf5e775c81b4b9e, type: 2}
   holdsEvent: 1
+  isGameMessage: 1
+  isSaved: 1
   nameFrom: {fileID: 0}
   nameFromNamable: 0
   canClear: 1

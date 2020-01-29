@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054fdc7ad1bc79f4d93ad793c55e2b37, type: 3}
+  m_Name: Game_NPC
+  m_EditorClassIdentifier: 
+  uniqueID: GAME
+  name: Game
+  Texture: {fileID: 0}
+  imagePath: 
+  namableDialogue: {fileID: 0}
+  imageDialogue: {fileID: 0}
+  juicy: 0
+  imageHeight: 0
+  imageWidth: 0
+  namableState: 0
+  canBeReset: 0
+  dialogue: {fileID: 0}
+  dialogues: []
+  hp: 0
+  inventory: {fileID: 0}
+  stats:
+    Arcana: 0
+    Endurance: 0
+    Intelligence: 0
+    Speed: 0
+    Strength: 0
+  dialogueState: 0
+  greeting: {fileID: 0}

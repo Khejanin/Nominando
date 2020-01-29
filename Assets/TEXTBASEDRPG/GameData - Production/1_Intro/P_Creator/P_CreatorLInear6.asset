@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: You see, I'm tired of creating Universe after Universe, It was fun
     for the first few billion years though!
-  insertText: 300
+  insertText: 
   next: {fileID: 11400000, guid: 6099720d3db0b214f8314612324685a3, type: 2}
+  holdsEvent: 0
+  isSaved: 0
+  nameFrom: {fileID: 0}
+  nameFromNamable: 0
+  canClear: 1
+  info: {fileID: 0}

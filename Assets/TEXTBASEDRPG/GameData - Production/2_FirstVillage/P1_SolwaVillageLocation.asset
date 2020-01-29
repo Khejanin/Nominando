@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: P1_SolwaVillageLocation
   m_EditorClassIdentifier: 
   uniqueID: SOLWA_VILLAGE
-  name: b
+  name: 
   Texture: {fileID: 0}
-  imagePath: 5e29bf05dbd1fd07ca181c26_SOLWA_VILLAGE.png
+  imagePath: 
   namableDialogue: {fileID: 11400000, guid: a455c63487a87d544a16aa1135b4d8af, type: 2}
   imageDialogue: {fileID: 11400000, guid: f7a9bbf8e5ed979449d652fb93948ff0, type: 2}
   juicy: 0
   imageHeight: 1080
   imageWidth: 1920
-  namableState: 4
+  namableState: 0
   canBeReset: 1
   entities:
   - {fileID: 11400000, guid: e109c860c6b7862458091745b5306f8d, type: 2}
@@ -29,6 +29,10 @@ MonoBehaviour:
   locations:
   - {fileID: 11400000, guid: c561097da8f58d946983b73fe37ec709, type: 2}
   actions: []
+  progressIndex: 2
   hideEntitiesNr: 1
   hideLocationsNr: 0
   hideActionsNr: 0
+  normalHideEntitiesNr: 1
+  normalHideLocationsNr: 0
+  normalHideActionsNr: 0

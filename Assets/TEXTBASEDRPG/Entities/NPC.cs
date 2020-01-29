@@ -28,6 +28,7 @@ public class NPC : Entity
             dialogueEventInfo.dialogue = dialogues[dialogueState];
         }
         else dialogueEventInfo.dialogue = dialogues[0];
+        dialogueEventInfo.dialogue.namable = this;
         dialogueEventInfo.eventType = DIALOGUE_EVENT_TYPE.StartDialogue;
         dialogueEventInfo.juicy = juicy;
         dialogueEventInfo.SetDefaultButtonStrings();

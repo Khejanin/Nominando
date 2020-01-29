@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: P1_SolwaFarmerNPC
   m_EditorClassIdentifier: 
   uniqueID: SOLWA_FARMER
-  name: gaa
+  name: lilj
   Texture: {fileID: 0}
-  imagePath: 5e29bf05dbd1fd07ca181c26_SOLWA_FARMER.png
+  imagePath: file upload successful
   namableDialogue: {fileID: 11400000, guid: 8c4370445389f1f40a484a6bd4c85635, type: 2}
   imageDialogue: {fileID: 11400000, guid: c92c30b702051ba449e791b15be1b3c8, type: 2}
   juicy: 0
@@ -37,5 +37,5 @@ MonoBehaviour:
     Intelligence: 0
     Speed: 0
     Strength: 0
-  dialogueState: 2
+  dialogueState: 0
   greeting: {fileID: 0}

@@ -16,5 +16,10 @@ MonoBehaviour:
     I have nothing more to tell you my son, off you go on your adventure!
   insertText: 300
   next: {fileID: 0}
-  holdsEvent: 1
-  info: {fileID: 11400000, guid: 3e3c4423acaa4ee4caedb30ebecac95e, type: 2}
+  holdsEvent: 0
+  isGameMessage: 0
+  isSaved: 0
+  nameFrom: {fileID: 0}
+  nameFromNamable: 0
+  canClear: 1
+  info: {fileID: 0}

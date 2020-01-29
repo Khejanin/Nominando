@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using EventSystem;
@@ -14,20 +15,21 @@ public class Game : MonoBehaviour
     //private LocationSystem _locationSystem;
     //private EntitySystem _entitySystem;
 
-    public GameObject locationPanel,cameraPanel,nameableInput,startMenu,loadingScreen,loadSavePanel;
+    public GameObject locationPanel,cameraPanel,nameableInput,startMenu,loadingScreen,loadSavePanel, loginButton, continueButton, logoutButton, dialoguePanel;
+
+    public LeanWindow LoginPanel, RegisterPanel;
 
     public static Location currentLocation;
 
     public bool cameraTestMode;
 
+    public AudioSource source;
+
     private bool inputEnabled = true;
 
-    public List<Location> objectos;
+    public List<MasterEventInfo> progressLocations;
 
-    public Dialogue startDialogue;
-
-    public MasterEventInfo startMasterEvent;
-
+    public static int progress;
 
     private void InitialPanelState()
     {
@@ -35,28 +37,53 @@ public class Game : MonoBehaviour
         startMenu.SetActive(true);
         loadingScreen.SetActive(true);
         loadSavePanel.GetComponent<LeanWindow>().TurnOff();
+        LoginPanel.TurnOff();
+        RegisterPanel.TurnOff();
+        UIHelperClass.ShowPanel(dialoguePanel,false);
+        
+        bool tokenExists = PlayerPrefs.GetString("token") != "";
+
+        continueButton.SetActive(tokenExists);
+        logoutButton.SetActive(tokenExists);
+        loginButton.SetActive(!tokenExists);
     }
     
     private void Start()
     {
         EventSystem.EventSystem.RegisterListener<GameStartEventInfo>(HandleStartGameEvent);
         EventSystem.EventSystem.RegisterListener<LoginEventInfo>(HandleLoginEvent);
+        EventSystem.EventSystem.RegisterListener<ProgressEventInfo>(HandleProgressEvent);
         NameableSystem.SetElements(locationPanel,cameraPanel,nameableInput);
         InitialPanelState();
     }
 
+    private void HandleProgressEvent(ProgressEventInfo progressEventInfo)
+    {
+        if (progressEventInfo.progressEventType == PROGRESS_EVENT_TYPE.GAME_PROGRESS)
+        {
+            progress = progressEventInfo.progressIndex;
+            APIHandler.getAPIHandler().UploadProgress();
+        }
+    }
+    
     private void HandleLoginEvent(LoginEventInfo loginEventInfo)
     {
         switch (loginEventInfo.eventState)
         {
             case LoginEventInfo.LoginEventState.LOGIN_SUCCESSFUL:
                 startMenu.SetActive(false);
+                source.Play();
                 break;
             case LoginEventInfo.LoginEventState.LOGOUT:
                 InitialPanelState();
+                source.Stop();
                 break;
             case LoginEventInfo.LoginEventState.REGISTRATION_SUCCESSFUL:
                 startMenu.SetActive(false);
+                break;
+            case LoginEventInfo.LoginEventState.BACK_TO_MENU:
+                source.Stop();
+                InitialPanelState();
                 break;
         }
     }
@@ -74,19 +101,9 @@ public class Game : MonoBehaviour
     }
     
     // Start is called before the first frame update
-    public void StartGame(long progress)
+    public void StartGame(int progress)
     {
-        switch (progress)
-        {
-            case -1:
-                var mCamera = new WebCamTexture();
-                cameraPanel.GetComponent<Image>().material.mainTexture = mCamera;
-                mCamera.Play();
-                break;
-            case 0:
-                if (startMasterEvent != null) EventSystem.EventSystem.FireEvent(startMasterEvent);
-                break;
-        }
+        EventSystem.EventSystem.FireEvent(progressLocations[progress]);
     }
     
 

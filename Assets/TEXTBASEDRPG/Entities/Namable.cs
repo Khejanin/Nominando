@@ -43,7 +43,7 @@ namespace Namable
             return result;
         }
         
-        public void Clear()
+        public virtual void Clear()
         {
             name = "";
             namableState = NAMABLE_STATE.INITIAL;

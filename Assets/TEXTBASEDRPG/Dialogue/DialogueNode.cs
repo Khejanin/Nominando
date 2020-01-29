@@ -11,6 +11,10 @@ public class DialogueNode : ScriptableObject, IEventHolder
     public DialogueNode next;
     public bool holdsEvent;
 
+    public bool isGameMessage;
+
+    public bool isSaved = false;
+
     public Namable.Namable nameFrom;
     public bool nameFromNamable = false;
 

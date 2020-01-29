@@ -14,7 +14,8 @@ namespace EventSystem
             LOGIN_FAILED,
             REGISTRATION_SUCCESSFUL,
             REGISTRATION_FAILED,
-            LOGOUT
+            LOGOUT,
+            BACK_TO_MENU
         }
     }
 }

@@ -94,17 +94,11 @@ public static class EntitySystem
     
     private static void AssignButtons(EntityEventInfo entityEventInfo)
     {
-        _buttonEventHandlers[0].SetText("Talk To");
-        _buttonEventHandlers[0].SetInteractable(true);
-        _buttonEventHandlers[0].SetEventInfo(entityEventInfo.entity.TalkTo());
+        _buttonEventHandlers[0].SetEventInfo(null);
 
-        _buttonEventHandlers[1].SetText("Talk To");
-        _buttonEventHandlers[1].SetInteractable(true);
-        _buttonEventHandlers[1].SetEventInfo(entityEventInfo.entity.TalkTo());
-
-        _buttonEventHandlers[2].SetText("Talk To");
-        _buttonEventHandlers[2].SetInteractable(true);
-        _buttonEventHandlers[2].SetEventInfo(entityEventInfo.entity.TalkTo());
+        _buttonEventHandlers[1].SetEventInfo(null);
+        
+        _buttonEventHandlers[2].SetEventInfo(null);
 
         _buttonEventHandlers[3].SetText("Talk To");
         _buttonEventHandlers[3].SetInteractable(true);

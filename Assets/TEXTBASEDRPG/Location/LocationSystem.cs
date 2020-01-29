@@ -71,6 +71,10 @@ public static class LocationSystem
     private static void LocationEvent(LocationEventInfo locationEventInfo)
     {
         Game.currentLocation = locationEventInfo.location;
+        ProgressEventInfo e = ScriptableObject.CreateInstance<ProgressEventInfo>();
+        e.progressIndex = locationEventInfo.location.progressIndex;
+        e.progressEventType = PROGRESS_EVENT_TYPE.GAME_PROGRESS;
+        EventSystem.EventSystem.FireEvent(e);
         Show(locationEventInfo);
         AssignButtons(locationEventInfo);
     }

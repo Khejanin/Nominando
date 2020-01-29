@@ -17,3 +17,10 @@ MonoBehaviour:
     It's a fun job isn't it?
   insertText: 
   next: {fileID: 11400000, guid: 21007635bc7a1ec4d93afb12e425a776, type: 2}
+  holdsEvent: 1
+  isGameMessage: 0
+  isSaved: 1
+  nameFrom: {fileID: 0}
+  nameFromNamable: 0
+  canClear: 1
+  info: {fileID: 11400000, guid: 3e3c4423acaa4ee4caedb30ebecac95e, type: 2}

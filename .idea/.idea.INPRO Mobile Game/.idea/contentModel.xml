@@ -8,21 +8,12 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ActionPanelScript.cs" t="Include" />
-        <e p="APIHandler.cs" t="Include" />
-        <e p="ButtonEventHandler.cs" t="Include" />
-        <e p="CameraController.cs" t="Include" />
-        <e p="ClearAllDataButtonScript.cs" t="Include" />
         <e p="ColorfulButtons" t="Include">
           <e p="Credits.txt" t="Include" />
         </e>
-        <e p="DataLoader.cs" t="Include" />
         <e p="Editor" t="Include">
           <e p="CustomDialogueEditor.cs" t="Include" />
         </e>
-        <e p="GameInitializer.cs" t="Include" />
-        <e p="GameView.cs" t="Include" />
-        <e p="HistoryTextScript.cs" t="Include" />
         <e p="Lean" t="Include">
           <e p="Common" t="Include">
             <e p="Examples" t="Include">
@@ -160,8 +151,6 @@
             <e p="simplerotate.cs" t="Include" />
           </e>
         </e>
-        <e p="LoginButtonScript.cs" t="Include" />
-        <e p="NotificationTextScript.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="ImageCropper" t="Include">
             <e p="Demo" t="Include">
@@ -196,8 +185,6 @@
           </e>
           <e p="RestSharp.xml" t="Include" />
         </e>
-        <e p="Referencer.cs" t="Include" />
-        <e p="RegisterButtonScript.cs" t="Include" />
         <e p="SwipeMenu" t="Include">
           <e p="Documentation" t="Include">
             <e p="Read Me First!.txt" t="Include" />
@@ -230,7 +217,20 @@
           </e>
         </e>
         <e p="TEXTBASEDRPG" t="Include">
-          <e p="Consumable.cs" t="Include" />
+          <e p="APIHandler.cs" t="Include" />
+          <e p="ButtonScripts" t="Include">
+            <e p="ActionPanelScript.cs" t="Include" />
+            <e p="ButtonEventHandler.cs" t="Include" />
+            <e p="ClearAllDataButtonScript.cs" t="Include" />
+            <e p="ContinueButtonScript.cs" t="Include" />
+            <e p="LoginButtonScript.cs" t="Include" />
+            <e p="LogoutButtonScript.cs" t="Include" />
+            <e p="RegisterButtonScript.cs" t="Include" />
+          </e>
+          <e p="Camera" t="Include">
+            <e p="CameraController.cs" t="Include" />
+          </e>
+          <e p="DataLoader.cs" t="Include" />
           <e p="Dialogue" t="Include">
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueNode.cs" t="Include" />
@@ -240,13 +240,17 @@
           </e>
           <e p="DialogueLoader.cs" t="Include" />
           <e p="Entities" t="Include">
+            <e p="Consumable.cs" t="Include" />
             <e p="Entity.cs" t="Include" />
             <e p="EntitySystem.cs" t="Include" />
             <e p="EventHolder.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="Namable.cs" t="Include" />
             <e p="NPC.cs" t="Include" />
             <e p="Player.cs" t="Include" />
+            <e p="Skill.cs" t="Include" />
           </e>
           <e p="EventSystem" t="Include">
             <e p="Action.cs" t="Include" />
@@ -264,16 +268,16 @@
             <e p="ProgressEventInfo.cs" t="Include" />
             <e p="ProgressSystem.cs" t="Include" />
           </e>
-          <e p="Foo.cs" t="Include" />
           <e p="Game.cs" t="Include" />
-          <e p="Inventory.cs" t="Include" />
-          <e p="Item.cs" t="Include" />
+          <e p="GameInitializer.cs" t="Include" />
+          <e p="HistorySystem.cs" t="Include" />
           <e p="Location" t="Include">
             <e p="Location.cs" t="Include" />
             <e p="LocationSystem.cs" t="Include" />
           </e>
-          <e p="Skill.cs" t="Include" />
-          <e p="TextManager.cs" t="Include" />
+          <e p="Notifications" t="Include">
+            <e p="NotificationTextScript.cs" t="Include" />
+          </e>
           <e p="UIHelperClass.cs" t="Include" />
         </e>
         <e p="TextJuicer" t="Include">

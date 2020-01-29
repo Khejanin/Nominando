@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054fdc7ad1bc79f4d93ad793c55e2b37, type: 3}
   m_Name: P1_SolwaDogNPC
   m_EditorClassIdentifier: 
-  uniqueID: 
+  uniqueID: SOLWA_MAYOR
   name: 
   Texture: {fileID: 0}
   imagePath: 
   namableDialogue: {fileID: 11400000, guid: 169be17c486cc764b90c654b70efa2e3, type: 2}
-  imageDialogue: {fileID: 0}
+  imageDialogue: {fileID: 11400000, guid: 5089f27a9071bea4dbe37221f1e9f27e, type: 2}
   juicy: 0
   imageHeight: 512
   imageWidth: 256
   namableState: 0
   canBeReset: 1
   dialogue: {fileID: 0}
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 4cc9c236ce516b445819b580df804b5f, type: 2}
   hp: 0
   inventory: {fileID: 0}
   stats:

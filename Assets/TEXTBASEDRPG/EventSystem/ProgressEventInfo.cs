@@ -14,6 +14,8 @@ namespace EventSystem
         public DialogueNodeSplit options;
         public IEventHolder eventHolder;
 
+        public int progressIndex;
+
         public IEventHolder eventHolderToAddOrRemove;
 
         public bool done;
@@ -38,7 +40,8 @@ namespace EventSystem
         REMOVE_FROM_LOCATION,
         ADD_TO_INVENTORY,
         PROGRESS_DIALOGUE,
-        PROGRESS_OPTIONS
+        PROGRESS_OPTIONS,
+        GAME_PROGRESS
     }
 
     public enum ADD_REMOVE_TYPE

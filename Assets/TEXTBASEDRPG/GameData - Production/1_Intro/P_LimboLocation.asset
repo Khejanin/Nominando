@@ -22,12 +22,17 @@ MonoBehaviour:
   imageHeight: 1080
   imageWidth: 1920
   namableState: 4
-  canBeReset: 0
+  canBeReset: 1
   entities:
   - {fileID: 11400000, guid: ef0fcf961ac16f4498139cf40ce5e45c, type: 2}
   locations:
   - {fileID: 11400000, guid: c561097da8f58d946983b73fe37ec709, type: 2}
   actions: []
+  progressIndex: 0
   hideEntitiesNr: 0
   hideLocationsNr: 1
   hideActionsNr: 0
+  clearsEverthing: 0
+  normalHideEntitiesNr: 0
+  normalHideLocationsNr: 1
+  normalHideActionsNr: 0
